@@ -279,3 +279,20 @@ a live call or verdict. The exporter cannot supply that missing authority.
 The goal remains usage-limited without any budget/reset action or overall
 completion claim. No paid call, real portrait transfer, public deployment,
 outside contact, credit redemption or Git commit occurred.
+
+## 2026-10-04 repository publication verified
+
+The user restored filesystem and network access and instructed continuation of
+publication to main. Native Git read the empty remote, reran repository safety,
+committed 147 source/documentation/synthetic-evidence files and pushed without
+force. Verified refs/heads/main equals local commit
+9688253781f69c9d7ac5c6892a0b99036640d4f6 and main tracks origin/main. The commit
+used the verified GitHub account's standard no-reply address because no local
+author was configured; global Git identity was unchanged. Ignored dependencies,
+build output, media, secrets and temporary artifacts were excluded. Fresh
+repository safety and task-graph checks passed. Updated STATUS to resolve the
+publication blocker; live image quality and participant inputs remain blocked.
+The initial-publication script is no longer needed for this initialized checkout
+and intentionally refuses to rerun against existing history. No hosted app or
+production deployment was created. The prior 501-test/five-TypeScript/build
+checkpoint remains the last full software verification.
