@@ -1,0 +1,1377 @@
+{
+  "plan": {
+    "schema_version": "1.0.0",
+    "protocol_id": "hair-eval-v1",
+    "run_id": "run-0000000000000001",
+    "record_id": "record-0000000000000001",
+    "created_at_utc": "2026-10-02T00:00:00.000Z",
+    "records_version": "hair-evaluation-records-v1",
+    "stage": "H0",
+    "code_revision_sha256": "ec96687ea51f971a2e06b26a0b100959829c8f7ce13a85f5f9688b58ace64d12",
+    "assets": [
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000000b",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000001",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000001",
+        "content_sha256": "242a919f4512c1088807c573b86d3c65bacafe2f25f232d206b1e1942654a96a",
+        "registry_manifest_sha256": "faee1b9e9fa22ac5f3b8f65e28b05522b6a323f41d9dda05933b818fbd6d10c8",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000000c",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000002",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000002",
+        "content_sha256": "1694fd7016d4da6d9b5ea33b565899fff6b60bc2b423e5fe8d5ee151d1f312b6",
+        "registry_manifest_sha256": "d2c11ecb90eb00caf994478633a976b42271bc6dc6f2791f7d6b461a5c6a6cf3",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000000d",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000003",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000003",
+        "content_sha256": "757777316354a08fc306240111883fd7ea45ce69225a051dda84fd98e850f492",
+        "registry_manifest_sha256": "38998855e97cdc104fc2769b6d9b87683c1f0e97332dfa8e7e35d9eef01ad7b2",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000000e",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000004",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000004",
+        "content_sha256": "806376287e681ecfb3bd34c09c9d05355ac9c98dc9774743241b8899b351f8c0",
+        "registry_manifest_sha256": "b45df88b4c1e6265b7076786b138e89293dba1d87208a0154e9013937d24775c",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000000f",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000005",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000005",
+        "content_sha256": "f1d0b96d33ed946a86270264dd12fdbfe619e89c7824b8e31d657a0fd5ba8bb8",
+        "registry_manifest_sha256": "a342b33ca9090aa8194a2a43721944f9d5d923513cbb99512bbaa268bedcdaee",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000010",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000006",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000006",
+        "content_sha256": "533d3e470df9f9b2550fb5854caba1768d1ed1c5e18cfb93ee74a37edccb069e",
+        "registry_manifest_sha256": "641f1eb9562f4b8ce53051c6684f58f147c436ba8113ff99eefd8a7e7c8b8115",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000011",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000007",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000007",
+        "content_sha256": "5f3090805926db1521aacf3a0fa28432a2053ebc9b0401f70c7ba447229a4616",
+        "registry_manifest_sha256": "f1aa8f472119843dc94afaa8689889145f7746c8ba9e752132ecaee2c70a0c0a",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000012",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000008",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000008",
+        "content_sha256": "07292794c67a4e94736e3566a58ced04429ac5d9ca76439c279d419a50672914",
+        "registry_manifest_sha256": "8b194d2520883627bee227b6c7e7e8c0193737839562f26291dc7888fcefbaca",
+        "parent_asset_ids": []
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000013",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "asset_id": "ast_0000000000000009",
+        "role": "style_reference",
+        "subject_id": null,
+        "content_sha256": "7779c67833c6548fc5e53da12088a8b37d760915eaf6f0281db7c7f5cd3a161a",
+        "registry_manifest_sha256": "60cde21ead93a6f21cf7dfd43ec713a325d811fba04b2addae8b3093d0a48f66",
+        "parent_asset_ids": []
+      }
+    ],
+    "cases": [
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000032",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000001",
+        "subject_id": "sub_0000000000000001",
+        "source_asset_id": "ast_0000000000000001",
+        "reference_asset_id": "ast_0000000000000009",
+        "specification": {
+          "artifact_id": "artifact-000000000000012c",
+          "content_sha256": "f72e921e981b115b11c9d29808646a6b33bf5c4d482894184869c2bf3bac3f60"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000190",
+          "content_sha256": "ceeaf66fd0f26b6b956f90d00e242389bfe50378f75c586a4b7937700ac63b78"
+        },
+        "transformation": "color",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000001",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000033",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000002",
+        "subject_id": "sub_0000000000000002",
+        "source_asset_id": "ast_0000000000000002",
+        "reference_asset_id": null,
+        "specification": {
+          "artifact_id": "artifact-000000000000012d",
+          "content_sha256": "f182f196ec4337cc6b88640c7c9bdcda355d658adf21574333b441f5c5a02d8f"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000191",
+          "content_sha256": "9dab975942b81eaef41d810a568b3212c2f8f44f0923eff372d1ac40f193bce2"
+        },
+        "transformation": "shorter",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000002",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000034",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000003",
+        "subject_id": "sub_0000000000000003",
+        "source_asset_id": "ast_0000000000000003",
+        "reference_asset_id": "ast_0000000000000009",
+        "specification": {
+          "artifact_id": "artifact-000000000000012e",
+          "content_sha256": "6b6e50b1639a47ed0ca3c7e5ba0cd0ff3e9114490f1d8371258fc4b1abdab43d"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000192",
+          "content_sha256": "710014d3995086a603144fcb36c3fb768a69ba30ddbe57c01abe135443f5d204"
+        },
+        "transformation": "longer",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000003",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000035",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000004",
+        "subject_id": "sub_0000000000000004",
+        "source_asset_id": "ast_0000000000000004",
+        "reference_asset_id": null,
+        "specification": {
+          "artifact_id": "artifact-000000000000012f",
+          "content_sha256": "93394c3dd99e100db6aa75c4953637ca88959aa0234997554a6240805d41e7b6"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000193",
+          "content_sha256": "dc84bc07dac8a80bbad2038795d58228d2282d8112f618b4b14c8aac049e5de4"
+        },
+        "transformation": "fringe_part",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000004",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000036",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000005",
+        "subject_id": "sub_0000000000000005",
+        "source_asset_id": "ast_0000000000000005",
+        "reference_asset_id": "ast_0000000000000009",
+        "specification": {
+          "artifact_id": "artifact-0000000000000130",
+          "content_sha256": "45d6292c6b154e4f2aac8ef83560f888315db9764080f006f4c49c184838bb20"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000194",
+          "content_sha256": "b911d69a2a51055981d0a1909803bd098a967cfb7e958cc21e3759299acb24b5"
+        },
+        "transformation": "fade_taper",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000005",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000037",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000006",
+        "subject_id": "sub_0000000000000006",
+        "source_asset_id": "ast_0000000000000006",
+        "reference_asset_id": null,
+        "specification": {
+          "artifact_id": "artifact-0000000000000131",
+          "content_sha256": "cf958cdc852673f036abdda4970e9815caede4167b71d0f76ec16dbca38afd67"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000195",
+          "content_sha256": "b88ce0fb2a9d247f9188b32c7fd353022affbe2d288369246b47929042645fd4"
+        },
+        "transformation": "layers_volume",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000006",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000038",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000007",
+        "subject_id": "sub_0000000000000007",
+        "source_asset_id": "ast_0000000000000007",
+        "reference_asset_id": "ast_0000000000000009",
+        "specification": {
+          "artifact_id": "artifact-0000000000000132",
+          "content_sha256": "2ab3f28f68329fe2c079d889c3375c2bafdf7298ca615939dc6c61f6fd8753bd"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000196",
+          "content_sha256": "51c694e0675e4e75d5d4d1174807edaa6e510ed7ded144f3e0b1c7efe5da5726"
+        },
+        "transformation": "multitone",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000007",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000039",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "case_id": "case-0000000000000008",
+        "subject_id": "sub_0000000000000008",
+        "source_asset_id": "ast_0000000000000008",
+        "reference_asset_id": null,
+        "specification": {
+          "artifact_id": "artifact-0000000000000133",
+          "content_sha256": "618929948a44aefef0e87c7c0b443c6f34a4544862708736d40d1af3feb3540b"
+        },
+        "prompt_inputs": {
+          "artifact_id": "artifact-0000000000000197",
+          "content_sha256": "206d725da9d88a0b1df69e0a66bbeb85cbd8925d4fc438248fba530072c6f0d9"
+        },
+        "transformation": "protective_texture",
+        "mask_inputs": [
+          {
+            "configuration_id": "config-0000000000000008",
+            "mask_asset_id": null,
+            "protected_region_asset_id": null
+          }
+        ]
+      }
+    ],
+    "configurations": [
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000001e",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000001",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000c8",
+          "content_sha256": "bf83f7bf94df7cc8a0cf7bdf429adc6b89ef96f3b0b20292d8848aa74fdf6d16"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-000000000000001f",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000002",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000c9",
+          "content_sha256": "64a61014b25b3582440c9af74da0c10fce124e80565a4f310c6893e42a784a4b"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000020",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000003",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000ca",
+          "content_sha256": "2bd96589426774c993842329c59028fa68569d188168669d220b7d8c127ecefb"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000021",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000004",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000cb",
+          "content_sha256": "95c6e460e2aa22f319f6b905df10e84931a55fd73fffc0ead89a65f4f0fc0619"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000022",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000005",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000cc",
+          "content_sha256": "ded1e073b3d3abda16f914ea564e04e98e4b3c591041ada61f46bcd75b08bc1a"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000023",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000006",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000cd",
+          "content_sha256": "8c7e172a380b743033fa5f4a20e029291517cfd0eae1e9774348952b8d5b304b"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000024",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000007",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000ce",
+          "content_sha256": "53e7b31e09e89c87272e7645fecab3a3ec3d9fccfa3db35467bcbcf86dd1bc33"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      },
+      {
+        "schema_version": "1.0.0",
+        "protocol_id": "hair-eval-v1",
+        "run_id": "run-0000000000000001",
+        "record_id": "record-0000000000000025",
+        "created_at_utc": "2026-10-02T00:00:00.000Z",
+        "configuration_id": "config-0000000000000008",
+        "provider_id": "provider-0000000000000001",
+        "api_region": "local",
+        "model_snapshot": {
+          "artifact_id": "artifact-0000000000000064",
+          "content_sha256": "be3888021f8b4f53b619c3f0d0950f8a5d418dcad77d4d5d989a9a673e5e6693"
+        },
+        "moderation_policy": {
+          "artifact_id": "artifact-0000000000000065",
+          "content_sha256": "f565cc37816b207c6961dd7419dad3eebf0f9cf20fb32860ae44bddbac2760a5"
+        },
+        "prompt_template": {
+          "artifact_id": "artifact-0000000000000066",
+          "content_sha256": "f2181213bdde50741aadb63dfd18a1812993cab1ed7be8f33aa16419448ed0c9"
+        },
+        "descriptor_conversion": {
+          "artifact_id": "artifact-0000000000000067",
+          "content_sha256": "31bf1d830875d7cabbb9fd712b479da3fb25d10980d561168a8b5625ef9fe07f"
+        },
+        "preprocessing": {
+          "artifact_id": "artifact-0000000000000068",
+          "content_sha256": "c763283587807ebf81a8d43397f0619b95f7df03f8cc58af2bbda666df445a43"
+        },
+        "terms_snapshot": {
+          "artifact_id": "artifact-0000000000000069",
+          "content_sha256": "384fc0487a43c368369f309228886cb7582f1aeac9222d98393988fca0caca5e"
+        },
+        "generation_parameters": {
+          "artifact_id": "artifact-00000000000000cf",
+          "content_sha256": "8f9084c9b2a327a465449ad6eafdd1ffd0d8a8f3aeca00bd92ef992590dd5e3a"
+        },
+        "mask_strategy": "prompt_only",
+        "segmentation": null,
+        "dilation_px": 0,
+        "feather_px": 0,
+        "manual_mask_edit": false,
+        "protected_region_definition": null,
+        "output": {
+          "width_px": 512,
+          "height_px": 512,
+          "format": "png",
+          "quality": "medium",
+          "background": "opaque",
+          "compression_percent": 100
+        },
+        "preview_count": 3,
+        "timeout_ms": 100,
+        "retry_policy": "transient_only",
+        "max_attempts": 2,
+        "concurrency": 1,
+        "idempotency": "one_key_per_attempt",
+        "seed": null,
+        "seed_unsupported": true,
+        "pricing_schedule_id": "pricing-0000000000000001",
+        "terms_snapshot_at_utc": "2026-10-02T00:00:00.000Z"
+      }
+    ],
+    "slots": [
+      {
+        "slot_id": "slot-0000000000000001",
+        "case_id": "case-0000000000000001",
+        "configuration_id": "config-0000000000000001",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000002",
+        "case_id": "case-0000000000000001",
+        "configuration_id": "config-0000000000000001",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000003",
+        "case_id": "case-0000000000000001",
+        "configuration_id": "config-0000000000000001",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-0000000000000004",
+        "case_id": "case-0000000000000002",
+        "configuration_id": "config-0000000000000002",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000005",
+        "case_id": "case-0000000000000002",
+        "configuration_id": "config-0000000000000002",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000006",
+        "case_id": "case-0000000000000002",
+        "configuration_id": "config-0000000000000002",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-0000000000000007",
+        "case_id": "case-0000000000000003",
+        "configuration_id": "config-0000000000000003",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000008",
+        "case_id": "case-0000000000000003",
+        "configuration_id": "config-0000000000000003",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000009",
+        "case_id": "case-0000000000000003",
+        "configuration_id": "config-0000000000000003",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-000000000000000a",
+        "case_id": "case-0000000000000004",
+        "configuration_id": "config-0000000000000004",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-000000000000000b",
+        "case_id": "case-0000000000000004",
+        "configuration_id": "config-0000000000000004",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-000000000000000c",
+        "case_id": "case-0000000000000004",
+        "configuration_id": "config-0000000000000004",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-000000000000000d",
+        "case_id": "case-0000000000000005",
+        "configuration_id": "config-0000000000000005",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-000000000000000e",
+        "case_id": "case-0000000000000005",
+        "configuration_id": "config-0000000000000005",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-000000000000000f",
+        "case_id": "case-0000000000000005",
+        "configuration_id": "config-0000000000000005",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-0000000000000010",
+        "case_id": "case-0000000000000006",
+        "configuration_id": "config-0000000000000006",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000011",
+        "case_id": "case-0000000000000006",
+        "configuration_id": "config-0000000000000006",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000012",
+        "case_id": "case-0000000000000006",
+        "configuration_id": "config-0000000000000006",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-0000000000000013",
+        "case_id": "case-0000000000000007",
+        "configuration_id": "config-0000000000000007",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000014",
+        "case_id": "case-0000000000000007",
+        "configuration_id": "config-0000000000000007",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000015",
+        "case_id": "case-0000000000000007",
+        "configuration_id": "config-0000000000000007",
+        "repetition": 0,
+        "variant_index": 2
+      },
+      {
+        "slot_id": "slot-0000000000000016",
+        "case_id": "case-0000000000000008",
+        "configuration_id": "config-0000000000000008",
+        "repetition": 0,
+        "variant_index": 0
+      },
+      {
+        "slot_id": "slot-0000000000000017",
+        "case_id": "case-0000000000000008",
+        "configuration_id": "config-0000000000000008",
+        "repetition": 0,
+        "variant_index": 1
+      },
+      {
+        "slot_id": "slot-0000000000000018",
+        "case_id": "case-0000000000000008",
+        "configuration_id": "config-0000000000000008",
+        "repetition": 0,
+        "variant_index": 2
+      }
+    ]
+  },
+  "plan_sha256": "d03b33171e11d7aae974c1e0f3156e6a0bc2f65375760b7add7fe59295d8f158",
+  "registry": [
+    {
+      "artifact_id": "artifact-0000000000000064",
+      "content": {
+        "kind": "model_snapshot",
+        "value": "deterministic-v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000065",
+      "content": {
+        "kind": "moderation_policy",
+        "value": "synthetic_no_media_v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000066",
+      "content": {
+        "kind": "prompt_template",
+        "value": "synthetic_hair_v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000067",
+      "content": {
+        "kind": "descriptor_conversion",
+        "value": "compiled_attributes_v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000068",
+      "content": {
+        "kind": "preprocessing",
+        "value": "synthetic_metadata_only_v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000069",
+      "content": {
+        "kind": "terms_snapshot",
+        "value": "synthetic_no_transfer_no_spend_v1"
+      }
+    },
+    {
+      "artifact_id": "artifact-bb265a5608fa230a",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000001",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000001",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-de8d3b14feda2bea",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000002",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000002",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-eebc8937de3e5bc2",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000003",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000003",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-b99c696e37ad40bd",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000004",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000004",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-aa32030ebaa134f3",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000005",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000005",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-da033bc7c86dde85",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000006",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000006",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-2b9f2e245d72901f",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000007",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000007",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-fd7ae0f7790d384d",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000008",
+        "role": "source_portrait",
+        "subject_id": "sub_0000000000000008",
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-0005897d2538996a",
+      "content": {
+        "kind": "synthetic_asset",
+        "recipe": "opaque_metadata_v1",
+        "asset_id": "ast_0000000000000009",
+        "role": "style_reference",
+        "subject_id": null,
+        "parent_asset_ids": []
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000c8",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "success"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000c9",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "partial"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000ca",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "policy_rejection"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000cb",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "timeout"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000cc",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "rate_limited"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000cd",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "provider_error"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000ce",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "timeout_then_success"
+      }
+    },
+    {
+      "artifact_id": "artifact-00000000000000cf",
+      "content": {
+        "kind": "generation_parameters",
+        "scenario": "rate_limit_then_success"
+      }
+    },
+    {
+      "artifact_id": "artifact-000000000000012c",
+      "content": {
+        "kind": "specification",
+        "transformation": "color",
+        "specification_sha256": "dc840a68b80b0175ec10f83e2645f9510c47fcaeffb6440dc60584ee9a9ea610"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000190",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "dc840a68b80b0175ec10f83e2645f9510c47fcaeffb6440dc60584ee9a9ea610",
+        "source_asset_id": "ast_0000000000000001",
+        "reference_asset_id": "ast_0000000000000009",
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-000000000000012d",
+      "content": {
+        "kind": "specification",
+        "transformation": "shorter",
+        "specification_sha256": "87b44d03c35abc32b0797598b18ad79425aee1584419cc790b0537969b583174"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000191",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "87b44d03c35abc32b0797598b18ad79425aee1584419cc790b0537969b583174",
+        "source_asset_id": "ast_0000000000000002",
+        "reference_asset_id": null,
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-000000000000012e",
+      "content": {
+        "kind": "specification",
+        "transformation": "longer",
+        "specification_sha256": "a67361b402f5814df90a43422bff5eca9b92f763d7a9e65e1d99a8eba5e5aaa3"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000192",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "a67361b402f5814df90a43422bff5eca9b92f763d7a9e65e1d99a8eba5e5aaa3",
+        "source_asset_id": "ast_0000000000000003",
+        "reference_asset_id": "ast_0000000000000009",
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-000000000000012f",
+      "content": {
+        "kind": "specification",
+        "transformation": "fringe_part",
+        "specification_sha256": "be1a07c99a7b1b1b7344e6c9653ecc1252a861d09fff4077107bb6c744f3b5fb"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000193",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "be1a07c99a7b1b1b7344e6c9653ecc1252a861d09fff4077107bb6c744f3b5fb",
+        "source_asset_id": "ast_0000000000000004",
+        "reference_asset_id": null,
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000130",
+      "content": {
+        "kind": "specification",
+        "transformation": "fade_taper",
+        "specification_sha256": "197f9d88de61bb60910b02c301aaa3f81dc2b69f537f76b8af453e1218e4f549"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000194",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "197f9d88de61bb60910b02c301aaa3f81dc2b69f537f76b8af453e1218e4f549",
+        "source_asset_id": "ast_0000000000000005",
+        "reference_asset_id": "ast_0000000000000009",
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000131",
+      "content": {
+        "kind": "specification",
+        "transformation": "layers_volume",
+        "specification_sha256": "c48a1907aa35c8577db24f04d6d9433f238e9ef20f6b5013d066ea4e0c619504"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000195",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "c48a1907aa35c8577db24f04d6d9433f238e9ef20f6b5013d066ea4e0c619504",
+        "source_asset_id": "ast_0000000000000006",
+        "reference_asset_id": null,
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000132",
+      "content": {
+        "kind": "specification",
+        "transformation": "multitone",
+        "specification_sha256": "0ac582e0d5f3c9f61760090d7c19c009667558bc0b4ccfea11000b472343e812"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000196",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "0ac582e0d5f3c9f61760090d7c19c009667558bc0b4ccfea11000b472343e812",
+        "source_asset_id": "ast_0000000000000007",
+        "reference_asset_id": "ast_0000000000000009",
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000133",
+      "content": {
+        "kind": "specification",
+        "transformation": "protective_texture",
+        "specification_sha256": "313ee21b02a0c7930b85c7fd24ed81b90d12ce780a1d44e6c3f90ddd3fae4deb"
+      }
+    },
+    {
+      "artifact_id": "artifact-0000000000000197",
+      "content": {
+        "kind": "prompt_inputs",
+        "specification_sha256": "313ee21b02a0c7930b85c7fd24ed81b90d12ce780a1d44e6c3f90ddd3fae4deb",
+        "source_asset_id": "ast_0000000000000008",
+        "reference_asset_id": null,
+        "prompt_version": "synthetic_hair_v1",
+        "strategy": "prompt-only",
+        "quality": "medium"
+      }
+    }
+  ]
+}

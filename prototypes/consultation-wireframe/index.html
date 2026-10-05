@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f6f1e8">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    >
+    <title>hAIr consultation wireframe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#app">Skip to consultation</a>
+
+    <header class="site-header">
+      <div class="site-header__inner">
+        <button class="brand" type="button" data-action="home" aria-label="hAIr prototype home">
+          <span class="brand__mark" aria-hidden="true">h</span>
+          <span>hAIr</span>
+          <span class="prototype-badge">wireframe</span>
+        </button>
+        <button id="header-delete" class="button button--text button--danger" type="button" data-action="ask-delete" hidden>
+          Delete
+        </button>
+      </div>
+    </header>
+
+    <div id="stepper" class="stepper-shell" aria-label="Consultation progress"></div>
+
+    <section class="prototype-tools" aria-label="Prototype test controls">
+      <details>
+        <summary>Prototype test states</summary>
+        <div class="prototype-tools__panel">
+          <p class="eyebrow">Researcher controls</p>
+          <p class="help">Choose a condition before starting. These controls are not part of the product.</p>
+          <label for="scenario-select">Generation or device condition</label>
+          <select id="scenario-select">
+            <option value="partial">One of three previews fails</option>
+            <option value="success">All three previews succeed</option>
+            <option value="camera-unavailable">Camera unavailable; upload works</option>
+            <option value="photo-retake">First photo needs a retake</option>
+            <option value="photo-multiple-faces">First photo contains multiple faces</option>
+            <option value="request-rejection">Request needs revision</option>
+            <option value="timeout">One preview times out</option>
+            <option value="deletion-failure">Deletion verification is delayed</option>
+          </select>
+          <div class="button-row button-row--wrap">
+            <button class="button button--small button--secondary" type="button" data-action="apply-scenario">Apply condition</button>
+            <button class="button button--small button--ghost" type="button" data-action="show-expired-consultation">View expired consultation</button>
+            <button class="button button--small button--ghost" type="button" data-action="show-expired-share">View expired link</button>
+            <button class="button button--small button--ghost" type="button" data-action="reset">Reset</button>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <main id="app" class="app-shell" tabindex="-1"></main>
+
+    <div id="route-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+    <dialog id="delete-dialog" class="dialog" aria-labelledby="delete-title" aria-describedby="delete-description">
+      <form method="dialog">
+        <p class="eyebrow">Immediate deletion</p>
+        <h2 id="delete-title">Delete this consultation?</h2>
+        <p id="delete-description">
+          This removes the client photo, every preview, notes, pending work, and active share links. It cannot be undone.
+        </p>
+        <div class="dialog__actions">
+          <button class="button button--secondary" value="cancel">Keep consultation</button>
+          <button class="button button--danger-solid" type="button" value="confirm" data-action="confirm-delete">Delete everything</button>
+        </div>
+      </form>
+    </dialog>
+
+    <noscript>
+      <p class="noscript">This clickable wireframe needs JavaScript. It does not connect to a server or upload files.</p>
+    </noscript>
+  </body>
+</html>

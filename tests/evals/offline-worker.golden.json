@@ -1,0 +1,137 @@
+{
+  "version": "hair-offline-worker-evidence-v1",
+  "scope": "closed_synthetic_worker_control_evidence",
+  "hash_basis": "safe_control_metadata_excludes_native_encoding",
+  "live_authorization": "NOT_EVALUATED",
+  "image_quality": "NOT_EVALUATED",
+  "release_gate": "NOT_EVALUATED",
+  "scenarios": [
+    {
+      "scenario": "three_previews",
+      "control_sha256": "51cfa260ec7d03c047caf78140f3ab0939beed64c9998b624dbdb0391c59bb35",
+      "attempts": 3,
+      "invoked": 3,
+      "failed": 0,
+      "published": 3,
+      "retained_outputs": 3,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 3,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    },
+    {
+      "scenario": "partial_cancel",
+      "control_sha256": "0312611cdc872c89cd9c6d43a789044476b6d7c46eef9987a85d20add4b339a9",
+      "attempts": 3,
+      "invoked": 3,
+      "failed": 0,
+      "published": 1,
+      "retained_outputs": 1,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 1,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    },
+    {
+      "scenario": "delete_during_decode",
+      "control_sha256": "4032b1769db31e1ef1b4bc4d5d385dbe2f3bfa49ea2b8928120a2af7313f7818",
+      "attempts": 1,
+      "invoked": 1,
+      "failed": 0,
+      "published": 0,
+      "retained_outputs": 0,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 0,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    },
+    {
+      "scenario": "timeout_retry",
+      "control_sha256": "3725f2c84046d112e13fad7d315bbce259fb6a104d0f6b825d564c6b9555eaa9",
+      "attempts": 2,
+      "invoked": 2,
+      "failed": 1,
+      "published": 1,
+      "retained_outputs": 1,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 1,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    },
+    {
+      "scenario": "malformed_then_expiry",
+      "control_sha256": "7e72f9bc0a068ab9c2d4106ce647541481353f50fa0c6fcfc63ab0a723ef50b3",
+      "attempts": 1,
+      "invoked": 1,
+      "failed": 1,
+      "published": 0,
+      "retained_outputs": 0,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 0,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    },
+    {
+      "scenario": "cleanup_outage_then_retry",
+      "control_sha256": "9836596ab22ad95d6c8b74012be3880ee198332dd841cde86407564e45de0024",
+      "attempts": 1,
+      "invoked": 1,
+      "failed": 0,
+      "published": 1,
+      "retained_outputs": 0,
+      "storage": {
+        "source": 0,
+        "transient": 0,
+        "output": 0,
+        "pendingCleanup": 0
+      },
+      "cleanup": {
+        "pendingProvider": 0,
+        "pendingDecode": 0,
+        "verification": "no_pending_offline_obligations"
+      }
+    }
+  ],
+  "outage_pending_storage": {
+    "source": 0,
+    "transient": 0,
+    "output": 1,
+    "pendingCleanup": 1
+  },
+  "outage_pending_verification": "pending"
+}

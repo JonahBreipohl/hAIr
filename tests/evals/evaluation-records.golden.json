@@ -1,0 +1,11 @@
+{
+  "records_version": "hair-evaluation-records-v1",
+  "scope": "metadata_record_integrity_only",
+  "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+  "bundle_sha256": "05a1c1af7eb9b352a4febdc4af6ba09027ec58ca77a463766caa9e66333d90d4",
+  "slot_count": 7,
+  "attempt_record_count": 9,
+  "logical_attempt_count": 8,
+  "output_count": 3,
+  "quality_gate_status": "NOT_EVALUATED"
+}

@@ -1,0 +1,587 @@
+version: 1
+updated_at: "2026-10-04"
+current_milestone: technical_prototype
+
+status_values:
+  - ready
+  - in_progress
+  - blocked
+  - done
+  - superseded
+
+tasks:
+  - id: DISC-001
+    title: Establish product and delivery foundation
+    status: done
+    priority: P0
+    dependencies: []
+    evidence:
+      - README.md
+      - docs/PRODUCT.md
+      - docs/ARCHITECTURE.md
+      - docs/QUALITY.md
+      - docs/ROADMAP.md
+      - docs/DECISIONS.md
+    acceptance:
+      - primary user and use case chosen
+      - PWA decision recorded
+      - MVP and non-goals explicit
+      - staged roadmap and release gates documented
+    retry_count: 0
+
+  - id: DISC-002
+    title: Define consent, data map, threat model, and deletion contract
+    status: done
+    priority: P0
+    dependencies:
+      - DISC-001
+    owned_paths:
+      - docs/privacy/
+    evidence:
+      - docs/privacy/DATA-MAP.md
+      - docs/privacy/CONSENT-AND-DISCLOSURE.md
+      - docs/privacy/THREAT-MODEL.md
+      - docs/privacy/DELETION-CONTRACT.md
+    acceptance:
+      - every collected datum has purpose, location, access, retention, and deletion path
+      - client-facing consent and AI-preview disclosure are drafted
+      - adult-only and reference-image rules are explicit
+      - threat model covers uploads, tenants, storage, jobs, shares, providers, telemetry, and support
+      - deletion verification and failure handling are specified
+    retry_count: 0
+
+  - id: DISC-003
+    title: Specify image benchmark assets and scoring protocol
+    status: done
+    priority: P0
+    dependencies:
+      - DISC-001
+    owned_paths:
+      - docs/quality/
+      - tests/evals/
+    evidence:
+      - docs/quality/EVAL-PROTOCOL.md
+      - docs/quality/ASSET-PROVENANCE.md
+      - docs/quality/SCORECARD.md
+      - docs/quality/REPORT-TEMPLATE.md
+    acceptance:
+      - asset provenance and consent schema defined
+      - cohort and transformation matrix defined
+      - blinded scoring sheet and adjudication rules defined
+      - provider settings, repetitions, cost, and latency capture defined
+      - prototype and pilot pass/fail reports have a stable format
+    retry_count: 0
+
+  - id: DISC-004
+    title: Create low-fidelity mobile consultation wireframe
+    status: done
+    priority: P0
+    dependencies:
+      - DISC-001
+    owned_paths:
+      - docs/design/
+      - prototypes/consultation-wireframe/
+    evidence:
+      - docs/design/WIREFRAME.md
+      - prototypes/consultation-wireframe/index.html
+      - prototypes/consultation-wireframe/styles.css
+      - prototypes/consultation-wireframe/app.js
+    acceptance:
+      - complete consent-to-delete flow represented
+      - all loading, validation, partial failure, retry, cancel, expiry, and delete states represented
+      - one-handed phone and shared tablet use considered
+      - copy distinguishes visualization from achievable service outcome
+      - prototype is ready for five representative usability sessions
+    retry_count: 0
+
+  - id: PROTO-001
+    title: Scaffold deterministic evaluation harness and fake image provider
+    status: done
+    priority: P0
+    dependencies:
+      - DISC-003
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - tests/fixtures/
+    evidence:
+      - packages/ai/src/provider.ts
+      - packages/ai/src/evaluation.ts
+      - packages/ai/src/fake-provider.ts
+      - packages/ai/src/fake-provider.test.ts
+      - packages/ai/src/benchmark.ts
+      - packages/ai/src/benchmark.test.ts
+      - packages/ai/src/asset-eligibility.ts
+      - packages/ai/src/asset-eligibility.test.ts
+      - tests/evals/h0-ai-preflight.golden.json
+      - tests/evals/asset-eligibility.golden.json
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+      - scripts/check-repository-safety.mjs
+      - .github/workflows/ci.yml
+      - .gitignore
+    acceptance:
+      - provider interface defined without vendor-specific domain leakage
+      - fake provider produces deterministic success, failure, timeout, partial, and rejection cases
+      - run manifest records source/reference IDs, spec, settings, timing, usage, and output IDs
+      - no private image or secret can enter source control or routine logs
+    retry_count: 0
+
+  - id: PROTO-004
+    title: Complete credential-free H0 evaluation preflight bundle
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-001
+      - MVP-002
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/benchmark.ts
+      - packages/ai/src/asset-eligibility.ts
+      - packages/ai/src/h0-ledger.ts
+      - packages/ai/src/h0-ledger.test.ts
+      - tests/evals/h0-ai-preflight.golden.json
+      - tests/evals/asset-eligibility.golden.json
+      - tests/evals/h0-check-ledger.golden.json
+      - tests/integration/h0-ledger.test.ts
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+    acceptance:
+      - canonical hashing, deterministic invocation/rating ordering, and scoped fake-provider aggregate are reproducible
+      - asset, destination, rights, adult status, retention, technical verification, and derivation-chain checks fail closed before transfer
+      - AI-runner and service/job preflight evidence reconcile in one content-free check ledger with explicit scope and verdict
+      - absent live-provider, image-quality, registry, or spend evidence cannot be reported as a passed technical image gate
+    retry_count: 0
+
+  - id: PROTO-005
+    title: Validate locked evaluation case, configuration, and attempt records
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-004
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-records.ts
+      - packages/ai/src/evaluation-records.test.ts
+      - packages/ai/src/index.ts
+      - tests/evals/evaluation-records.fixture.json
+      - tests/evals/evaluation-records.golden.json
+      - docs/quality/EVALUATION-RECORDS.md
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+    acceptance:
+      - versioned case, configuration, and attempt records have exact runtime schemas aligned with the evaluation protocol
+      - run, case, asset, configuration, attempt, and output references reconcile without duplicate or missing logical records
+      - malformed records, unknown fields, private content, and inconsistent terminal outcomes fail closed before reporting
+      - canonical hashes and deterministic metadata-only fixtures make locked plans and append-only attempt corrections reproducible
+      - remaining pricing, rating, adjudication, image processing, and live-provider gates remain explicit and unevaluated
+    retry_count: 0
+
+  - id: PROTO-006
+    title: Produce locked benchmark records from executable fake-provider runs
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-005
+      - PROTO-001
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/locked-fake-runner.ts
+      - packages/ai/src/locked-fake-runner.test.ts
+      - packages/ai/src/index.ts
+      - tests/evals/locked-fake-runner.fixture.json
+      - tests/evals/locked-fake-runner.golden.json
+      - tests/evals/build-locked-fake-fixture.mjs
+      - docs/quality/LOCKED-FAKE-RUNNER.md
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+    acceptance:
+      - synthetic artifact resolution verifies locked hashes before fake-provider invocation
+      - the executable runner emits validated plan, attempt, retry, and output sidecars rather than trusting static attempt assertions
+      - every requested slot and failed or retried invocation remains accounted for with reproducible metadata-only golden evidence
+      - configuration or input drift fails closed before invocation and malformed provider evidence cannot enter exports
+      - fake output metadata and virtual timing cannot claim actual decoding, live authority, pricing, image quality, or a release gate
+    retry_count: 0
+
+  - id: PROTO-007
+    title: Validate declared benchmark stage and comparison coverage
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-005
+      - PROTO-006
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-coverage.ts
+      - packages/ai/src/evaluation-coverage.test.ts
+      - packages/ai/src/evaluation-coverage.test-fixtures.ts
+      - packages/ai/src/index.ts
+      - tests/evals/evaluation-coverage.golden.json
+      - docs/quality/EVALUATION-COVERAGE.md
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+    acceptance:
+      - exact preregistered coverage records bind the locked plan and declared stage requirements
+      - distinct subjects, cases, transformation and reference allocations, repetitions, and preview slots reconcile with the protocol
+      - controlled comparisons use identical declared case, source, reference, and repetition populations or explicit preregistered unsupported blocks
+      - authorized metadata supplies coverage labels without inferring demographics or traits from images
+      - missing evidence and inadequate or inconsistent stage coverage cannot yield a complete coverage result
+      - deterministic metadata-only fixtures and adversarial checks preserve reproducibility while image-quality and release gates remain unevaluated
+    retry_count: 0
+
+  - id: PROTO-008
+    title: Verify offline generation worker cancellation and malformed-output cleanup
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-006
+      - PROTO-007
+      - MVP-002
+    owned_paths:
+      - packages/ai/
+      - packages/domain/
+      - packages/service/
+      - tests/integration/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/domain/src/application-service.ts
+      - packages/domain/src/authorization.ts
+      - packages/domain/src/service-contract.test.ts
+      - packages/service/src/in-memory-service.ts
+      - packages/service/src/offline-generation-worker.ts
+      - packages/service/src/offline-output-decoder.ts
+      - packages/service/src/offline-output-decoder.test.ts
+      - packages/service/src/offline-output-fixtures.ts
+      - tests/integration/offline-generation-worker.test.ts
+      - tests/integration/offline-worker-evidence.test.ts
+      - tests/integration/service-simulator.test.ts
+      - tests/evals/offline-worker-evidence.ts
+      - tests/evals/offline-worker.golden.json
+      - docs/quality/OFFLINE-WORKER.md
+      - docs/api/PRIVATE-APPLICATION-SERVICE.md
+      - docs/quality/HARNESS-IMPLEMENTATION.md
+    acceptance:
+      - an executable fake-provider worker exercises service state transitions and output processing without live access or customer media
+      - cancellation, deletion, expiry, and timeout during invocation or output processing prevent late publication and purge transient outputs
+      - completed siblings survive job cancellation while duplicate callbacks and retries cannot publish duplicate outputs
+      - generated ephemeral synthetic image buffers exercise actual bounded decode rejection for malformed or mismatched output before output sidecars are published
+      - safe event and cleanup evidence retains failed attempts without bytes, locators, raw errors, prompts, or secrets in exports
+      - targeted tests and independent review verify the offline worker scope while live authorization, moderation, subject-count, image-quality, and release gates remain unevaluated
+    retry_count: 0
+
+  - id: PROTO-009
+    title: Enforce deterministic benchmark invocation and rating schedules
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-005
+      - PROTO-006
+      - PROTO-007
+      - PROTO-008
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-scheduling.ts
+      - packages/ai/src/evaluation-scheduling.test.ts
+      - packages/ai/src/evaluation-scheduling.test-fixtures.ts
+      - tests/evals/evaluation-scheduling.golden.json
+      - packages/ai/src/locked-fake-runner.ts
+      - packages/ai/src/locked-fake-runner.test.ts
+      - tests/evals/build-locked-fake-fixture.mjs
+      - tests/evals/locked-fake-runner.fixture.json
+      - tests/evals/locked-fake-runner.golden.json
+      - docs/quality/EVALUATION-SCHEDULING.md
+      - docs/quality/LOCKED-FAKE-RUNNER.md
+    acceptance:
+      - exact versioned schedule inputs bind locked plans or output records and preserve every required candidate exactly once
+      - invocation and blinded-rating order use the protocol hash keys with reproducible deterministic tie handling
+      - adjacency constraints separate sibling variants, same cases, configurations, and repetitions where the declared population permits
+      - collision findings state their proof scope and unresolved feasibility remains incomplete rather than fabricating an unavoidable-collision claim
+      - safe golden fixtures and adversarial checks cover scarce populations, ties, missing or duplicated candidates, and changed locks
+      - schedules grant no media access and cannot imply rater qualification, blinding, real execution, image-quality, or release clearance
+    retry_count: 0
+
+  - id: PROTO-010
+    title: Reconcile locked benchmark pricing and attempt-cost evidence
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-005
+      - PROTO-006
+      - PROTO-008
+      - PROTO-009
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-costs.ts
+      - packages/ai/src/evaluation-costs.test.ts
+      - packages/ai/src/evaluation-costs.test-fixtures.ts
+      - tests/evals/evaluation-costs.golden.json
+      - docs/quality/EVALUATION-COSTS.md
+    acceptance:
+      - exact versioned metadata inputs bind pricing schedules, currency, formulas, configuration terms, and the complete locked attempt history
+      - bounded integer or rational arithmetic has explicit rounding and rejects overflow, incompatible units, mixed currencies, and unsupported formulas
+      - failed, rejected, canceled, timed-out, and retried attempts remain in accounting; usage revisions reconcile each logical attempt once without rewriting original evidence
+      - estimated costs and billed charges remain separate with explicit invoice-reconciliation state; unavailable usage or charges cannot silently become zero or a complete total
+      - declared spend-budget observations cannot authorize a paid call; missing trusted budget authority, live billing, displayed-output evidence, or usable-result ratings remain unevaluated
+      - cost-per-displayed and cost-per-usable denominators remain incomplete without separately validated evidence, and zero denominators never produce a fabricated cost
+      - safe golden fixtures and independent adversarial checks verify corrections, missing costs, retry accounting, currency, units, rounding, and serializer tampering
+    retry_count: 0
+
+  - id: PROTO-011
+    title: Lock declared human rating and adjudication evidence
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-005
+      - PROTO-007
+      - PROTO-009
+      - PROTO-010
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-ratings.ts
+      - packages/ai/src/evaluation-ratings.test.ts
+      - packages/ai/src/evaluation-ratings.test-fixtures.ts
+      - tests/evals/evaluation-ratings.golden.json
+      - docs/quality/EVALUATION-RATINGS.md
+    acceptance:
+      - exact versioned metadata schemas bind the record bundle, scorecard, declared rating population, assignment roles, and append-only rating and adjudication records
+      - all seven valid scores are integers from zero through five; invalid-viewer or invalid-input observations remain separate from low model scores and retain raw evidence
+      - declared two-stylist and one-general coverage, distinct reviewer IDs, required adjudication roles, and non-rater adjudicator independence are reconciled without claiming real qualification or identity
+      - critical-fail and disagreement triggers use the documented rules; unresolved validity, missing records, or unresolved required adjudication stays incomplete rather than excluding inconvenient outcomes
+      - adjudication does not overwrite raw scores; later gate calculations retain valid raw-rating medians and explicit critical-fail and exclusion lineage
+      - controlled codes and opaque artifact locks exclude names, images, raw notes, locators, secrets, and unsupported exclusion reasons
+      - synthetic goldens and independent adversarial checks verify linkage, completeness, chronology, roles, score bounds, triggers, and serializer tampering
+      - declarations cannot authenticate raters, attest calibration or blinding, authorize viewing, establish usable-result denominators, or clear live image-quality and release gates
+    retry_count: 0
+
+  - id: PROTO-012
+    title: Derive locked declared human-quality metrics
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-007
+      - PROTO-010
+      - PROTO-011
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-metrics.ts
+      - packages/ai/src/evaluation-metrics.test.ts
+      - packages/ai/src/evaluation-metrics.test-fixtures.ts
+      - tests/evals/evaluation-metrics.golden.json
+      - docs/quality/EVALUATION-METRICS.md
+    acceptance:
+      - exact versioned inputs bind the record, coverage, cost, and rating reports and reconcile run, configuration, output, and subject populations
+      - calculate all seven median-of-three scores separately and retain missing or unresolved ratings as incomplete rather than zeros or exclusions
+      - publish exact numerator and denominator counts for declared displayable, usable, critical-fail, and major-artifact classifications with raw and adjudication lineage
+      - preserve failures, retries, rejected outputs, reliability reruns, invalid observations, and distinct subject counts with explicitly named denominator scopes
+      - exact rational threshold observations preserve strict versus inclusive comparisons and zero denominators never fabricate a rate or cost
+      - declared cost-per-usable observations require complete charges and complete applicable ratings while authentic display, sampling, billing, and release authority remain unevaluated
+      - synthetic goldens and independent adversarial review verify borderline medians, counts, missing evidence, cohort sufficiency, history locks, and serializer tampering
+      - numerical declarations cannot clear live T1 or P1 gates, substitute for confidence intervals and agreement evidence, or select a provider winner
+    retry_count: 1
+
+  - id: PROTO-013
+    title: Lock reproducible uncertainty and rating-agreement evidence
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-007
+      - PROTO-011
+      - PROTO-012
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-statistics.ts
+      - packages/ai/src/evaluation-statistics.test.ts
+      - packages/ai/src/evaluation-statistics.test-fixtures.ts
+      - tests/evals/evaluation-statistics.golden.json
+      - docs/quality/EVALUATION-STATISTICS.md
+    acceptance:
+      - accepted versioned statistical methods use primary authoritative references and freeze resampling units, seeds, repetitions, interval conventions, and missing-data rules before an analysis can be decision-capable
+      - locked metric and raw-rating populations reconcile run, configuration, paired cases, distinct subjects, and all seven dimensions without pooling reliability reruns into primary quality
+      - reproducible uncertainty calculations respect paired case comparisons and subject clustering where the protocol requires them
+      - ordinal agreement plus exact and within-one-point agreement preserve raw scores and cannot manufacture consensus from adjudication or incomplete coverage
+      - insufficient or degenerate populations, unknown classifications, and unresolved evidence remain explicit and cannot establish zero risk or a passed confidence requirement
+      - synthetic fixtures, independent reference calculations, golden locks, and adversarial review verify method boundaries, reproducibility, missing data, and serializer integrity
+      - authentic sampling, human qualification, blinding, real image quality, and T1/P1 release verdicts remain unevaluated
+    retry_count: 0
+
+  - id: PROTO-002
+    title: Run provider, prompt, mask, and protected-region bake-off
+    status: blocked
+    priority: P0
+    dependencies:
+      - DISC-002
+      - DISC-003
+      - PROTO-001
+      - PROTO-007
+      - PROTO-008
+      - PROTO-009
+      - PROTO-010
+      - PROTO-011
+      - PROTO-012
+      - PROTO-013
+      - PROTO-014
+    blocker: Requires live-provider credential/organization access, permitted adult benchmark portraits, an explicit spend limit, and the remaining restricted-registry and evaluation gates.
+    acceptance:
+      - at least Sunburst, Flare, and one serious challenger compared when access permits
+      - prompt-only, mask, and mask-plus-protected-region strategies compared
+      - blinded human scores, automated signals, latency, failures, and cost reported
+      - winning configuration clears the technical prototype gate or the project records a pivot
+    retry_count: 0
+
+  - id: PROTO-014
+    title: Export a stable metadata-only benchmark report bundle
+    status: done
+    priority: P0
+    dependencies:
+      - PROTO-004
+      - PROTO-005
+      - PROTO-007
+      - PROTO-010
+      - PROTO-011
+      - PROTO-012
+      - PROTO-013
+    owned_paths:
+      - packages/ai/
+      - tests/evals/
+      - docs/quality/
+    evidence:
+      - packages/ai/src/evaluation-report-bundle.ts
+      - packages/ai/src/evaluation-report-bundle.test.ts
+      - packages/ai/src/evaluation-report-bundle.test-fixtures.ts
+      - tests/evals/evaluation-report-bundle.golden.json
+      - docs/quality/EVALUATION-REPORT-BUNDLE.md
+    acceptance:
+      - exact bounded source inputs are recomputed and reconciled by run, configuration, plan, population, cutoff and version before any export
+      - all twelve files named in REPORT-TEMPLATE.md have a fixed schema, safe deterministic ordering, calculation references and verifiable hashes
+      - numerator, denominator, units, scope and unavailable values remain explicit in machine-readable and human-readable tables
+      - missing code revision, provenance, detectors, trusted viewing, full inference, latency or release authority makes the corresponding report requirement incomplete rather than fabricating evidence
+      - generated reports contain no unresolved template tokens, raw notes, media, names, paths, locators, credentials or CSV formula injection
+      - golden fixtures and independent adversarial review verify cross-file joins, source tampering, missing evidence, escaping and deterministic reproduction
+      - synthetic export completeness cannot select a provider, authorize a paid call or clear a live T1/P1 release gate
+    retry_count: 0
+
+  - id: PROTO-003
+    title: Build consultation vertical slice
+    status: done
+    priority: P1
+    dependencies:
+      - DISC-002
+      - DISC-004
+      - PROTO-001
+    evidence:
+      - apps/web/src/components/consultation-flow.tsx
+      - apps/web/src/app/globals.css
+      - apps/web/src/app/manifest.ts
+      - prototypes/consultation-wireframe/
+      - tests/e2e/consultation.spec.ts
+      - tests/e2e/recovery.spec.ts
+      - playwright.config.ts
+    acceptance:
+      - consent to capture to describe to generate to compare to agree to delete works end to end
+      - fake provider is default outside restricted staging
+      - target phone/tablet browser checks pass
+      - deletion and expired-share behavior are verified
+    retry_count: 0
+
+  - id: MVP-001
+    title: Define private application-service contracts
+    status: done
+    priority: P1
+    dependencies:
+      - DISC-002
+      - PROTO-003
+    owned_paths:
+      - packages/domain/
+      - docs/api/
+    evidence:
+      - packages/domain/src/application-service.ts
+      - packages/domain/src/authorization.ts
+      - packages/domain/src/records.ts
+      - packages/domain/src/service-contract.test.ts
+      - docs/api/PRIVATE-APPLICATION-SERVICE.md
+    acceptance:
+      - consent and save receipts, opaque assets, consultations, variants, bounded shared briefs, and deletion types are explicit
+      - authorization requirements, client authority, and consultation assignment are stated for every operation
+      - idempotency and terminal-state behavior are defined
+      - retention deadlines and deletion receipts derive from one clock contract
+      - contract tests contain no customer content, private path, or secret
+    retry_count: 0
+
+  - id: MVP-002
+    title: Implement secure local service simulator and contract tests
+    status: done
+    priority: P1
+    dependencies:
+      - MVP-001
+    owned_paths:
+      - packages/service/
+      - tests/integration/
+    evidence:
+      - packages/service/src/in-memory-service.ts
+      - tests/integration/service-simulator.test.ts
+    acceptance:
+      - consent is required before an asset handle can be accepted
+      - salon and stylist authorization deny cross-tenant and unassigned same-tenant access by default
+      - generation callbacks are idempotent and ignore late terminal results
+      - generation publication is bound to retained inputs and settled transient media is purged
+      - deletion revokes access immediately and verifies every simulated subsystem
+      - expiry revokes consultation and share access without exposing content
+    retry_count: 0
+
+  - id: UX-001
+    title: Run representative consultation usability sessions
+    status: blocked
+    priority: P1
+    dependencies:
+      - DISC-004
+      - PROTO-003
+    blocker: Requires representative stylist/client participants and authorized external coordination.
+    evidence:
+      - docs/design/WIREFRAME.md
+      - docs/research/USABILITY-SESSION-KIT.md
+      - docs/research/SESSION-WORKSHEET.md
+      - prototypes/consultation-wireframe/
+      - apps/web/
+    acceptance:
+      - five representative users complete the low-fidelity flow without coaching
+      - five representative users complete the interactive vertical slice without coaching
+      - participants include practitioners experienced with curly/coily hair and protective styles
+      - material friction and accessibility findings are recorded and addressed or explicitly accepted
+    retry_count: 0
+
+  - id: GATE-001
+    title: Independent prototype gate review
+    status: blocked
+    priority: P0
+    dependencies:
+      - PROTO-002
+      - PROTO-003
+    blocker: Awaiting the live image-quality bake-off in PROTO-002; current fake-provider software checks pass, while physical-device and assistive-technology evidence remain pilot-release work.
+    acceptance:
+      - independent review challenges identity, cohort quality, privacy, cost, latency, and failure handling
+      - every gate in docs/QUALITY.md has evidence
+      - decision is continue, narrow, change approach, or stop
+    retry_count: 0

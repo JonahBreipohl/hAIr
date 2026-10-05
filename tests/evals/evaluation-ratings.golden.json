@@ -1,0 +1,1291 @@
+{
+  "input": {
+    "adjudications": [
+      {
+        "adjudication_id": "adjudication-0000000000000001",
+        "completed_at_utc": "2026-10-01T00:00:08.000Z",
+        "observation_record_sha256": "05701474d00f8984f68f1585907a70967fb36a9aeb44a635cdf4dbe5a41f50ec",
+        "output_id": "output-0000000000000001",
+        "previous_record_sha256": null,
+        "protocol_id": "hair-eval-v1",
+        "record_id": "record-00000000000c3500",
+        "reviewed_rating_sha256s": [
+          "0946e441281f713c59febc45efc9459223400110baffc2af472982a921996865",
+          "2c5b56a962572473f75397d86bd67592c0d7885576fe7a2b9522ed80a1ae0777",
+          "3dcac62d9a0585568eeed5ad066ad8d387940eeb7b16d0952706e527d73931a6"
+        ],
+        "revision": 0,
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:06.000Z",
+        "trigger_codes": [
+          "CRITICAL_FAIL"
+        ],
+        "votes": [
+          {
+            "completed_at_utc": "2026-10-01T00:00:07.000Z",
+            "critical_fail_codes": [],
+            "input_valid": true,
+            "invalid_reason": null,
+            "major_artifact_codes": [],
+            "production_displayable": true,
+            "rationale_artifact": {
+              "artifact_id": "artifact-00000000000dbba4",
+              "content_sha256": "c4f90ce7c9d304615049dd541e3bf50cb84d1c760c71485fd6e925051e36b9dd"
+            },
+            "reviewer_id": "rater-000000000000000a",
+            "reviewer_role": "licensed_stylist",
+            "started_at_utc": "2026-10-01T00:00:06.000Z"
+          },
+          {
+            "completed_at_utc": "2026-10-01T00:00:07.000Z",
+            "critical_fail_codes": [],
+            "input_valid": true,
+            "invalid_reason": null,
+            "major_artifact_codes": [],
+            "production_displayable": true,
+            "rationale_artifact": {
+              "artifact_id": "artifact-00000000000dbba5",
+              "content_sha256": "3dc5aab6cc199cbf9312c41de9eeea4fc8762d8a0daf4a35320a4e543e8176bb"
+            },
+            "reviewer_id": "rater-000000000000000b",
+            "reviewer_role": "evaluation_safety_lead",
+            "started_at_utc": "2026-10-01T00:00:06.000Z"
+          }
+        ]
+      }
+    ],
+    "assignments": {
+      "assignments": [
+        {
+          "assignment_id": "assignment-0000000000000001",
+          "assignment_position": 0,
+          "output_id": "output-0000000000000001",
+          "rater_id": "rater-0000000000000001",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000002",
+          "assignment_position": 0,
+          "output_id": "output-0000000000000001",
+          "rater_id": "rater-0000000000000002",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000003",
+          "assignment_position": 0,
+          "output_id": "output-0000000000000001",
+          "rater_id": "rater-0000000000000003",
+          "rater_role": "general"
+        },
+        {
+          "assignment_id": "assignment-0000000000000004",
+          "assignment_position": 1,
+          "output_id": "output-0000000000000007",
+          "rater_id": "rater-0000000000000001",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000005",
+          "assignment_position": 1,
+          "output_id": "output-0000000000000007",
+          "rater_id": "rater-0000000000000002",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000006",
+          "assignment_position": 1,
+          "output_id": "output-0000000000000007",
+          "rater_id": "rater-0000000000000003",
+          "rater_role": "general"
+        },
+        {
+          "assignment_id": "assignment-0000000000000007",
+          "assignment_position": 2,
+          "output_id": "output-0000000000000008",
+          "rater_id": "rater-0000000000000001",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000008",
+          "assignment_position": 2,
+          "output_id": "output-0000000000000008",
+          "rater_id": "rater-0000000000000002",
+          "rater_role": "licensed_stylist"
+        },
+        {
+          "assignment_id": "assignment-0000000000000009",
+          "assignment_position": 2,
+          "output_id": "output-0000000000000008",
+          "rater_id": "rater-0000000000000003",
+          "rater_role": "general"
+        }
+      ],
+      "frozen_at_utc": "2026-10-01T00:00:02.000Z",
+      "population_output_ids": [
+        "output-0000000000000001",
+        "output-0000000000000007",
+        "output-0000000000000008"
+      ],
+      "protocol_id": "hair-eval-v1",
+      "ratings_version": "hair-evaluation-ratings-v1",
+      "run_id": "run-0000000000000001",
+      "schema_version": "1.0.0",
+      "scorecard_id": "hair-scorecard-v1"
+    },
+    "assignments_sha256": "03a10a9e70c87b5a9a4f0f25ffa46f7fee971a5e8c169558fd687dab0864a121",
+    "bundle": {
+      "attempts": [
+        {
+          "attempt_id": "attempt-0000000000000001",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000001",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "none",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000001",
+          "outcome": "succeeded",
+          "output_id": "output-0000000000000001",
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000064",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000001",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 1,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000002",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000002",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "provider_failure",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000002",
+          "outcome": "failed",
+          "output_id": null,
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000065",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000002",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000003",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000003",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "policy_rejection",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000003",
+          "outcome": "rejected",
+          "output_id": null,
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000066",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000003",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000004",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000004",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 1000,
+          "failure_code": "timeout",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000004",
+          "outcome": "timed_out",
+          "output_id": null,
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000067",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000004",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000005",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000005",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "canceled",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000005",
+          "outcome": "canceled",
+          "output_id": null,
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000068",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000005",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000006",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000006",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "decode_failure",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000006",
+          "outcome": "malformed_output",
+          "output_id": null,
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-0000000000000069",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000006",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000007",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000007",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "duration_ms": 100,
+          "failure_code": "display_rejection",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000007",
+          "outcome": "output_rejected",
+          "output_id": "output-0000000000000007",
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-000000000000006a",
+          "retry_of_attempt_id": null,
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000007",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000008",
+          "attempt_index": 2,
+          "case_id": "case-0000000000000004",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "none",
+          "created_at_utc": "2026-10-01T00:00:02.000Z",
+          "duration_ms": 100,
+          "failure_code": "none",
+          "finished_at_utc": "2026-10-01T00:00:02.000Z",
+          "idempotency_id": "idempotency-0000000000000008",
+          "outcome": "succeeded",
+          "output_id": "output-0000000000000008",
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-000000000000006c",
+          "retry_of_attempt_id": "attempt-0000000000000004",
+          "revision": 0,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000004",
+          "started_at_utc": "2026-10-01T00:00:01.000Z",
+          "supersedes_record_sha256": null,
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 0,
+            "status": "estimated",
+            "text_input_units": 10
+          }
+        },
+        {
+          "attempt_id": "attempt-0000000000000001",
+          "attempt_index": 1,
+          "case_id": "case-0000000000000001",
+          "configuration_id": "config-0000000000000001",
+          "correction_reason": "usage_reconciliation",
+          "created_at_utc": "2026-10-01T00:00:03.000Z",
+          "duration_ms": 100,
+          "failure_code": "none",
+          "finished_at_utc": "2026-10-01T00:00:01.000Z",
+          "idempotency_id": "idempotency-0000000000000001",
+          "outcome": "succeeded",
+          "output_id": "output-0000000000000001",
+          "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-000000000000006d",
+          "retry_of_attempt_id": null,
+          "revision": 1,
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000001",
+          "started_at_utc": "2026-10-01T00:00:00.000Z",
+          "supersedes_record_sha256": "8cac446ad70bba5c7d7e923f99b5271c255d5a40b10e34cb79c1016579469242",
+          "usage": {
+            "image_input_units": 1,
+            "image_output_units": 1,
+            "status": "billed",
+            "text_input_units": 12
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "attempt_id": "attempt-0000000000000001",
+          "content_sha256": "000000000000000000000000000000000000000000000000000000000000012c",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "disposition": "candidate",
+          "format": "png",
+          "height_px": 1024,
+          "output_id": "output-0000000000000001",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-00000000000000c8",
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000001",
+          "width_px": 1024
+        },
+        {
+          "attempt_id": "attempt-0000000000000007",
+          "content_sha256": "000000000000000000000000000000000000000000000000000000000000012d",
+          "created_at_utc": "2026-10-01T00:00:01.000Z",
+          "disposition": "rejected",
+          "format": "png",
+          "height_px": 1024,
+          "output_id": "output-0000000000000007",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-00000000000000c9",
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000007",
+          "width_px": 1024
+        },
+        {
+          "attempt_id": "attempt-0000000000000008",
+          "content_sha256": "000000000000000000000000000000000000000000000000000000000000012e",
+          "created_at_utc": "2026-10-01T00:00:02.000Z",
+          "disposition": "candidate",
+          "format": "png",
+          "height_px": 1024,
+          "output_id": "output-0000000000000008",
+          "protocol_id": "hair-eval-v1",
+          "record_id": "record-00000000000000ca",
+          "run_id": "run-0000000000000001",
+          "schema_version": "1.0.0",
+          "slot_id": "slot-0000000000000004",
+          "width_px": 1024
+        }
+      ],
+      "plan": {
+        "assets": [
+          {
+            "asset_id": "ast_0000000000000001",
+            "content_sha256": "0000000000000000000000000000000000000000000000000000000000000001",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "parent_asset_ids": [],
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000000a",
+            "registry_manifest_sha256": "000000000000000000000000000000000000000000000000000000000000000a",
+            "role": "source_portrait",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "subject_id": "sub_0000000000000001"
+          },
+          {
+            "asset_id": "ast_0000000000000002",
+            "content_sha256": "0000000000000000000000000000000000000000000000000000000000000002",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "parent_asset_ids": [
+              "ast_0000000000000001"
+            ],
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000000b",
+            "registry_manifest_sha256": "000000000000000000000000000000000000000000000000000000000000000b",
+            "role": "mask",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "subject_id": null
+          },
+          {
+            "asset_id": "ast_0000000000000003",
+            "content_sha256": "0000000000000000000000000000000000000000000000000000000000000003",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "parent_asset_ids": [
+              "ast_0000000000000001"
+            ],
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000000c",
+            "registry_manifest_sha256": "000000000000000000000000000000000000000000000000000000000000000c",
+            "role": "protected_region",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "subject_id": null
+          },
+          {
+            "asset_id": "ast_0000000000000004",
+            "content_sha256": "0000000000000000000000000000000000000000000000000000000000000004",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "parent_asset_ids": [],
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000000d",
+            "registry_manifest_sha256": "000000000000000000000000000000000000000000000000000000000000000d",
+            "role": "style_reference",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "subject_id": null
+          }
+        ],
+        "cases": [
+          {
+            "case_id": "case-0000000000000001",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000c8",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000c8"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000001e",
+            "reference_asset_id": "ast_0000000000000004",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000064",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000064"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "color"
+          },
+          {
+            "case_id": "case-0000000000000002",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000c9",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000c9"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-000000000000001f",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000065",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000065"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "shorter"
+          },
+          {
+            "case_id": "case-0000000000000003",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000ca",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000ca"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-0000000000000020",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000066",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000066"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "longer"
+          },
+          {
+            "case_id": "case-0000000000000004",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000cb",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000cb"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-0000000000000021",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000067",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000067"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "fringe_part"
+          },
+          {
+            "case_id": "case-0000000000000005",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000cc",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000cc"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-0000000000000022",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000068",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000068"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "fade_taper"
+          },
+          {
+            "case_id": "case-0000000000000006",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000cd",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000cd"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-0000000000000023",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-0000000000000069",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000069"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "layers_volume"
+          },
+          {
+            "case_id": "case-0000000000000007",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "mask_inputs": [
+              {
+                "configuration_id": "config-0000000000000001",
+                "mask_asset_id": "ast_0000000000000002",
+                "protected_region_asset_id": "ast_0000000000000003"
+              }
+            ],
+            "prompt_inputs": {
+              "artifact_id": "artifact-00000000000000ce",
+              "content_sha256": "00000000000000000000000000000000000000000000000000000000000000ce"
+            },
+            "protocol_id": "hair-eval-v1",
+            "record_id": "record-0000000000000024",
+            "reference_asset_id": null,
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "source_asset_id": "ast_0000000000000001",
+            "specification": {
+              "artifact_id": "artifact-000000000000006a",
+              "content_sha256": "000000000000000000000000000000000000000000000000000000000000006a"
+            },
+            "subject_id": "sub_0000000000000001",
+            "transformation": "multitone"
+          }
+        ],
+        "code_revision_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "configurations": [
+          {
+            "api_region": "local",
+            "concurrency": 1,
+            "configuration_id": "config-0000000000000001",
+            "created_at_utc": "2026-10-01T00:00:00.000Z",
+            "descriptor_conversion": {
+              "artifact_id": "artifact-0000000000000004",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000004"
+            },
+            "dilation_px": 4,
+            "feather_px": 8,
+            "generation_parameters": {
+              "artifact_id": "artifact-0000000000000009",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000009"
+            },
+            "idempotency": "one_key_per_attempt",
+            "manual_mask_edit": false,
+            "mask_strategy": "hair_mask_plus_protected_region",
+            "max_attempts": 2,
+            "model_snapshot": {
+              "artifact_id": "artifact-0000000000000001",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000001"
+            },
+            "moderation_policy": {
+              "artifact_id": "artifact-0000000000000002",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000002"
+            },
+            "output": {
+              "background": "opaque",
+              "compression_percent": 0,
+              "format": "png",
+              "height_px": 1024,
+              "quality": "medium",
+              "width_px": 1024
+            },
+            "preprocessing": {
+              "artifact_id": "artifact-0000000000000005",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000005"
+            },
+            "preview_count": 1,
+            "pricing_schedule_id": "pricing-0000000000000001",
+            "prompt_template": {
+              "artifact_id": "artifact-0000000000000003",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000003"
+            },
+            "protected_region_definition": {
+              "artifact_id": "artifact-0000000000000007",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000007"
+            },
+            "protocol_id": "hair-eval-v1",
+            "provider_id": "provider-0000000000000001",
+            "record_id": "record-0000000000000014",
+            "retry_policy": "transient_only",
+            "run_id": "run-0000000000000001",
+            "schema_version": "1.0.0",
+            "seed": 42,
+            "seed_unsupported": false,
+            "segmentation": {
+              "artifact_id": "artifact-0000000000000006",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000006"
+            },
+            "terms_snapshot": {
+              "artifact_id": "artifact-0000000000000008",
+              "content_sha256": "0000000000000000000000000000000000000000000000000000000000000008"
+            },
+            "terms_snapshot_at_utc": "2026-10-01T00:00:00.000Z",
+            "timeout_ms": 1000
+          }
+        ],
+        "created_at_utc": "2026-10-01T00:00:00.000Z",
+        "protocol_id": "hair-eval-v1",
+        "record_id": "record-0000000000000001",
+        "records_version": "hair-evaluation-records-v1",
+        "run_id": "run-0000000000000001",
+        "schema_version": "1.0.0",
+        "slots": [
+          {
+            "case_id": "case-0000000000000001",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000001",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000002",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000002",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000003",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000003",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000004",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000004",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000005",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000005",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000006",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000006",
+            "variant_index": 0
+          },
+          {
+            "case_id": "case-0000000000000007",
+            "configuration_id": "config-0000000000000001",
+            "repetition": 0,
+            "slot_id": "slot-0000000000000007",
+            "variant_index": 0
+          }
+        ],
+        "stage": "H0"
+      },
+      "plan_sha256": "c021c1f6617cae2573b5bd202102afc84d1e106ca648940805bd5c52dcb0e20f"
+    },
+    "bundle_sha256": "05a1c1af7eb9b352a4febdc4af6ba09027ec58ca77a463766caa9e66333d90d4",
+    "locked_at_utc": "2026-10-01T00:01:00.000Z",
+    "observations": [
+      {
+        "automated_display_gate": "rejected",
+        "configuration_decision_sensitivity": "unchanged",
+        "output_id": "output-0000000000000001",
+        "previous_record_sha256": null,
+        "record_id": "record-00000000000aae60",
+        "recorded_at_utc": "2026-10-01T00:00:05.000Z",
+        "revision": 0
+      },
+      {
+        "automated_display_gate": "rejected",
+        "configuration_decision_sensitivity": "unchanged",
+        "output_id": "output-0000000000000007",
+        "previous_record_sha256": null,
+        "record_id": "record-00000000000aae61",
+        "recorded_at_utc": "2026-10-01T00:00:05.000Z",
+        "revision": 0
+      },
+      {
+        "automated_display_gate": "rejected",
+        "configuration_decision_sensitivity": "unchanged",
+        "output_id": "output-0000000000000008",
+        "previous_record_sha256": null,
+        "record_id": "record-00000000000aae62",
+        "recorded_at_utc": "2026-10-01T00:00:05.000Z",
+        "revision": 0
+      }
+    ],
+    "observations_sha256": "86135c21e9e24990fee5de42137627b4cb3d58a1896b2bba885481453f2d2001",
+    "ratings": [
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000001",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000001",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [
+          "CF_IDENTITY"
+        ],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000001",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000001",
+        "rating_id": "rating-0000000000000001",
+        "rating_valid": true,
+        "rationale_artifact": {
+          "artifact_id": "artifact-00000000000dbba3",
+          "content_sha256": "328ac6237d18a706f3347dcfbd111d671d90acb74779011a320078671fa0c43b"
+        },
+        "realism_score": 4,
+        "record_id": "record-00000000000927c0",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000002",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000001",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000001",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000002",
+        "rating_id": "rating-0000000000000002",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c1",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000003",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000001",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000001",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000003",
+        "rating_id": "rating-0000000000000003",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c2",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000004",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000007",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000007",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000001",
+        "rating_id": "rating-0000000000000004",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c3",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000005",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000007",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000007",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000002",
+        "rating_id": "rating-0000000000000005",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c4",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000006",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000007",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000007",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000003",
+        "rating_id": "rating-0000000000000006",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c5",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000007",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000004",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000008",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000001",
+        "rating_id": "rating-0000000000000007",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c6",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000008",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000004",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000008",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000002",
+        "rating_id": "rating-0000000000000008",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c7",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      },
+      {
+        "adherence_score": 4,
+        "artifact_tags": [],
+        "assignment_id": "assignment-0000000000000009",
+        "boundary_score": 4,
+        "case_id": "case-0000000000000004",
+        "color_score": 4,
+        "completed_at_utc": "2026-10-01T00:00:04.000Z",
+        "confidence": "high",
+        "consultation_usefulness_score": 4,
+        "critical_fail_codes": [],
+        "identity_score": 4,
+        "invalid_reason": null,
+        "locality_score": 4,
+        "major_artifact_codes": [],
+        "output_id": "output-0000000000000008",
+        "protocol_id": "hair-eval-v1",
+        "rater_id": "rater-0000000000000003",
+        "rating_id": "rating-0000000000000009",
+        "rating_valid": true,
+        "rationale_artifact": null,
+        "realism_score": 4,
+        "record_id": "record-00000000000927c8",
+        "run_id": "run-0000000000000001",
+        "scorecard_id": "hair-scorecard-v1",
+        "started_at_utc": "2026-10-01T00:00:03.000Z",
+        "submitted_at_utc": "2026-10-01T00:00:05.000Z",
+        "viewer_artifact": {
+          "artifact_id": "artifact-00000000000dbba2",
+          "content_sha256": "daa3cd609e02a95c42e46fdee7925797f91f5c2f1d7366c75654189bb4b978a6"
+        }
+      }
+    ],
+    "scorecard_lock": {
+      "artifact_id": "artifact-00000000000dbba1",
+      "content_sha256": "3c54b2da93b86922d503938fe7e10af76c8768d317a9e08fd5470ca12ce205aa",
+      "scorecard_id": "hair-scorecard-v1"
+    }
+  },
+  "result": {
+    "ratings_version": "hair-evaluation-ratings-v1",
+    "scope": "all_retained_output_rating_metadata",
+    "input_sha256": "95fae529f4850e4114cd5199d13c93a9089e0f18bd4a3c81e51b961c69c6a1d0",
+    "bundle_sha256": "05a1c1af7eb9b352a4febdc4af6ba09027ec58ca77a463766caa9e66333d90d4",
+    "status": "COMPLETE_DECLARED_RATINGS",
+    "empty_population": false,
+    "outputs": [
+      {
+        "output_id": "output-0000000000000001",
+        "status": "COMPLETE_DECLARED_RATINGS",
+        "findings": [],
+        "primary_rating_count": 3,
+        "valid_primary_rating_count": 3,
+        "raw_critical_fail_codes": [
+          "CF_IDENTITY"
+        ],
+        "raw_major_artifact_codes": [],
+        "triggers": [
+          "CRITICAL_FAIL"
+        ],
+        "raw_rating_sha256s": [
+          "0946e441281f713c59febc45efc9459223400110baffc2af472982a921996865",
+          "2c5b56a962572473f75397d86bd67592c0d7885576fe7a2b9522ed80a1ae0777",
+          "3dcac62d9a0585568eeed5ad066ad8d387940eeb7b16d0952706e527d73931a6"
+        ],
+        "latest_observation_sha256": "05701474d00f8984f68f1585907a70967fb36a9aeb44a635cdf4dbe5a41f50ec",
+        "declared_raw_medians": {
+          "identity_score": 4,
+          "adherence_score": 4,
+          "locality_score": 4,
+          "boundary_score": 4,
+          "realism_score": 4,
+          "color_score": 4,
+          "consultation_usefulness_score": 4
+        },
+        "latest_adjudication_sha256": "1345180626ca170ca5fe99a4761c700a5ffdd332e8b0b42beb2475c61203474f",
+        "declared_classification": {
+          "input_valid": true,
+          "invalid_reason": null,
+          "critical_fail_codes": [],
+          "major_artifact_codes": [],
+          "production_displayable": true
+        },
+        "raw_flags_cleared_by_declaration": [
+          "CF_IDENTITY"
+        ]
+      },
+      {
+        "output_id": "output-0000000000000007",
+        "status": "COMPLETE_DECLARED_RATINGS",
+        "findings": [],
+        "primary_rating_count": 3,
+        "valid_primary_rating_count": 3,
+        "raw_critical_fail_codes": [],
+        "raw_major_artifact_codes": [],
+        "triggers": [],
+        "raw_rating_sha256s": [
+          "0e2e9ad77b56088e64087ff9a1b3a87cdac57e75f293bbb1f4a324f82555deec",
+          "d8517214db9976300e5929ab2ea22f990b63e4e93bb2865d175ea84447d4056e",
+          "e9e63d20c29e0d8a0df0bca46307aefa2f8babdb286ab51caa0f21e7d9970274"
+        ],
+        "latest_observation_sha256": "e494f3676633178551d0a1c817e6d7ce5da2f97b403648dcb96db555417ef42d",
+        "declared_raw_medians": {
+          "identity_score": 4,
+          "adherence_score": 4,
+          "locality_score": 4,
+          "boundary_score": 4,
+          "realism_score": 4,
+          "color_score": 4,
+          "consultation_usefulness_score": 4
+        },
+        "latest_adjudication_sha256": null,
+        "declared_classification": null,
+        "raw_flags_cleared_by_declaration": []
+      },
+      {
+        "output_id": "output-0000000000000008",
+        "status": "COMPLETE_DECLARED_RATINGS",
+        "findings": [],
+        "primary_rating_count": 3,
+        "valid_primary_rating_count": 3,
+        "raw_critical_fail_codes": [],
+        "raw_major_artifact_codes": [],
+        "triggers": [],
+        "raw_rating_sha256s": [
+          "3d32de2daea2fb655f40b12aff76e6b2dd5d1df368e1c03d09c867b05078161a",
+          "5a063d11d7b2242965513c7fe1a471cd85edae8285e9add65bbee961ff41535a",
+          "6a658e85deb2517cc2e4a6ee682527f182982d9aba9916a3f7b4160988948c68"
+        ],
+        "latest_observation_sha256": "955ce371f214c61b6c50656c771040ec89a472b56ddf6204dc0f2d7e8d82cc89",
+        "declared_raw_medians": {
+          "identity_score": 4,
+          "adherence_score": 4,
+          "locality_score": 4,
+          "boundary_score": 4,
+          "realism_score": 4,
+          "color_score": 4,
+          "consultation_usefulness_score": 4
+        },
+        "latest_adjudication_sha256": null,
+        "declared_classification": null,
+        "raw_flags_cleared_by_declaration": []
+      }
+    ],
+    "raw_rating_count": 9,
+    "observation_record_count": 3,
+    "adjudication_record_count": 1,
+    "media_authorization": "NOT_EVALUATED",
+    "reviewer_qualification": "NOT_EVALUATED",
+    "reviewer_identity": "NOT_EVALUATED",
+    "calibration": "NOT_EVALUATED",
+    "blinding": "NOT_EVALUATED",
+    "assignment_order": "NOT_EVALUATED",
+    "full_stage_coverage": "NOT_EVALUATED",
+    "usable_result_denominator": "NOT_EVALUATED",
+    "quality_gate": "NOT_EVALUATED",
+    "release_gate": "NOT_EVALUATED"
+  }
+}

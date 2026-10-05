@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "hair-eval-v1",
+  "harness_version": "hair-h0-ai-v1",
+  "scope": "ai_evaluation_harness",
+  "stage": "H0",
+  "report_id": "h0-report-9db7c2410327cef2",
+  "run_id": "h0-run-001",
+  "created_at_utc": "2026-10-01T00:00:00.000Z",
+  "plan_sha256": "9db7c2410327cef2ab5f33971765e2c118463b4541cb8c17779893e406b7d114",
+  "case_count": 32,
+  "subject_count": 8,
+  "outcome_counts": {
+    "succeeded": 12,
+    "failed": 12,
+    "rejected": 4,
+    "timed_out": 4
+  },
+  "requested_slots": 32,
+  "completed_slots": 12,
+  "completion_rate": 0.375,
+  "latency_ms": {
+    "p50": 30,
+    "p90": 32,
+    "p95": 32
+  },
+  "total_estimated_cost_usd": 0,
+  "checks": [
+    {
+      "check_id": "H0_CASE_COUNT",
+      "status": "PASS",
+      "observed": "32/32 cases"
+    },
+    {
+      "check_id": "H0_SUBJECT_COUNT",
+      "status": "PASS",
+      "observed": "8/8 synthetic subjects"
+    },
+    {
+      "check_id": "H0_REQUIRED_SCENARIOS",
+      "status": "PASS",
+      "observed": "6/6 fake scenarios"
+    },
+    {
+      "check_id": "H0_EXPECTED_OUTCOMES",
+      "status": "PASS",
+      "observed": "0 outcome mismatches"
+    },
+    {
+      "check_id": "H0_INVOCATION_ORDER",
+      "status": "PASS",
+      "observed": "SHA-256 9db7c2410327cef2ab5f33971765e2c118463b4541cb8c17779893e406b7d114"
+    },
+    {
+      "check_id": "H0_RATING_ORDER",
+      "status": "PASS",
+      "observed": "12 opaque outputs ordered"
+    },
+    {
+      "check_id": "H0_MANIFEST_LINKAGE",
+      "status": "PASS",
+      "observed": "32/32 manifests linked"
+    }
+  ],
+  "verdict": "PASS"
+}

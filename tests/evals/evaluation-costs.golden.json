@@ -1,0 +1,98 @@
+{
+  "costs_version": "hair-evaluation-costs-v1",
+  "scope": "synthetic_arithmetic_metadata",
+  "reports": {
+    "complete": {
+      "input_sha256": "b7bccfe6f5bcbfaf0689cd264914686f4ff2d413ce0d89bf47296328a9d1b94b",
+      "report_sha256": "1fa77a014305687f60679c5f07ba7baccbd95b3bb9c863f0b705d5ca44025e68",
+      "run": {
+        "denominator_scope": "all_declared_requested_slots_including_reruns",
+        "requested_slot_count": 7,
+        "logical_attempt_count": 8,
+        "attempt_record_count": 9,
+        "usage_revision_count": 1,
+        "formula_estimate": {
+          "status": "COMPLETE_DECLARED_ESTIMATE",
+          "known_subtotal": {
+            "numerator": "1603",
+            "denominator": 7
+          },
+          "total": {
+            "numerator": "1603",
+            "denominator": 7
+          },
+          "unknown_attempt_ids": [],
+          "cost_per_all_declared_requested_slot": {
+            "numerator": "1603",
+            "denominator": 49
+          }
+        },
+        "declared_charges": {
+          "status": "COMPLETE_DECLARED_CHARGES",
+          "known_subtotal": {
+            "numerator": "360",
+            "denominator": 1
+          },
+          "total": {
+            "numerator": "360",
+            "denominator": 1
+          },
+          "unknown_attempt_ids": [],
+          "cost_per_all_declared_requested_slot": {
+            "numerator": "360",
+            "denominator": 7
+          }
+        },
+        "invoice_reconciliation_status": "COMPLETE_DECLARED_RECONCILIATION"
+      },
+      "budget_observation": {
+        "formula_estimate": "DECLARED_WITHIN_CAP",
+        "declared_charges": "DECLARED_WITHIN_CAP"
+      }
+    },
+    "partial": {
+      "input_sha256": "ef5649cfd0bcbf1dd0784aa35ffca163372deffc45473a6b9b23685e94961682",
+      "report_sha256": "d156071d8fe613d052386e61679912e2f03c126ee72b455b3765242b2a3d433b",
+      "run": {
+        "denominator_scope": "all_declared_requested_slots_including_reruns",
+        "requested_slot_count": 7,
+        "logical_attempt_count": 8,
+        "attempt_record_count": 9,
+        "usage_revision_count": 1,
+        "formula_estimate": {
+          "status": "INCOMPLETE",
+          "known_subtotal": {
+            "numerator": "1409",
+            "denominator": 7
+          },
+          "total": null,
+          "unknown_attempt_ids": [
+            "attempt-0000000000000002"
+          ],
+          "cost_per_all_declared_requested_slot": null
+        },
+        "declared_charges": {
+          "status": "INCOMPLETE",
+          "known_subtotal": {
+            "numerator": "350",
+            "denominator": 1
+          },
+          "total": null,
+          "unknown_attempt_ids": [
+            "attempt-0000000000000001"
+          ],
+          "cost_per_all_declared_requested_slot": null
+        },
+        "invoice_reconciliation_status": "INCOMPLETE"
+      },
+      "budget_observation": {
+        "formula_estimate": "INDETERMINATE",
+        "declared_charges": "INDETERMINATE"
+      }
+    }
+  },
+  "pricing_authority": "NOT_EVALUATED",
+  "invoice_authenticity": "NOT_EVALUATED",
+  "spending_authorization": "NOT_EVALUATED",
+  "quality_gate": "NOT_EVALUATED"
+}

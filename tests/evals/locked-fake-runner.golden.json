@@ -1,0 +1,21 @@
+{
+  "runner_version": "hair-locked-fake-runner-v2",
+  "scope": "synthetic_locked_fake_execution",
+  "input_sha256": "ffb2feff4bc6971980d555216410043f13ccdd0c273abed6dc42f9fa384c5f07",
+  "plan_sha256": "d03b33171e11d7aae974c1e0f3156e6a0bc2f65375760b7add7fe59295d8f158",
+  "bundle_sha256": "b69e298ee36f0e154ee785b7ad199447759bb0ec3042fac24fd2421fd253411e",
+  "report_sha256": "c99b392496d6cd26dc857775ac1ed0efcf2e9981104385de2c8af15c46f24959",
+  "slot_count": 24,
+  "attempt_count": 40,
+  "retry_count": 16,
+  "output_count": 11,
+  "outcomes": {
+    "succeeded": 11,
+    "failed": 17,
+    "timed_out": 9,
+    "rejected": 3
+  },
+  "technical_image_gate_status": "NOT_EVALUATED",
+  "output_hash_basis": "synthetic_metadata_not_image_bytes",
+  "timing": "virtual_serial"
+}

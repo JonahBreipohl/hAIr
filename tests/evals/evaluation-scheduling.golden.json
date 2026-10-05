@@ -1,0 +1,193 @@
+{
+  "version": "hair-evaluation-scheduling-v1",
+  "scope": "synthetic_metadata_only",
+  "invocation": {
+    "input_sha256": "7bfd8601f29f1b359d4cda19b6de4ce80d9e8f85604bba7b2d731d5fa131092f",
+    "report_sha256": "7355086fd60df8177aa4be48be6a934990583451663ea27c2e10e582959cf3fb",
+    "ordered_slot_ids": [
+      "slot-0000000000000003",
+      "slot-0000000000000001",
+      "slot-0000000000000004",
+      "slot-0000000000000002",
+      "slot-0000000000000006",
+      "slot-0000000000000005",
+      "slot-000000000000000a",
+      "slot-000000000000000b",
+      "slot-0000000000000008",
+      "slot-0000000000000009",
+      "slot-000000000000000c",
+      "slot-0000000000000007",
+      "slot-0000000000000010",
+      "slot-000000000000000e",
+      "slot-0000000000000012",
+      "slot-000000000000000d",
+      "slot-0000000000000011",
+      "slot-000000000000000f"
+    ]
+  },
+  "ratings": {
+    "zero": {
+      "input_sha256": "fb19bc5a09e10241ac8b594d781b4b9ec2d1149c3b378bb45bc2a2a12c96b0c4",
+      "report_sha256": "8a3b546098ae416df11b247ddddad703e50b27d93456fba119941c5808354ae5",
+      "population": 18,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "ZERO_COLLISIONS",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 0,
+        "frequency_sum": 0,
+        "spanning_tree": 0,
+        "combined": 0
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 0,
+        "total": 0,
+        "any_collision_edges": 0
+      },
+      "order_sha256": "2ec750a7f7b316469f09d8e3c1e59abdf16e227b6add2604dc79a5e1cb8529f9"
+    },
+    "joint": {
+      "input_sha256": "c675aa65ade7425e11ceaa95e67fa62bce0f7c72e718b2be5f1b570b5508aa2a",
+      "report_sha256": "94c79312b0b0e32ee69c8820bb2f40082592dc1a5721313e8395eb383501089b",
+      "population": 8,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "ANALYTIC_LOWER_BOUND_MATCHED",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 0,
+        "frequency_sum": 0,
+        "spanning_tree": 3,
+        "combined": 3
+      },
+      "collisions": {
+        "case": 1,
+        "configuration": 0,
+        "repetition": 2,
+        "total": 3,
+        "any_collision_edges": 3
+      },
+      "order_sha256": "d7dca31af131976d2113c460798fb7e8eea5e796392932393fd7af6b5240b4fd"
+    },
+    "single": {
+      "input_sha256": "17461db30f276915d33e04bec5819a4fc91a07fd077518084cfaaebe9e85a958",
+      "report_sha256": "70b444ff414bff5b3adce1d563f3beb67c3aa5ecea4170b801e142bf6a71290c",
+      "population": 4,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "ANALYTIC_LOWER_BOUND_MATCHED",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 3,
+        "repetition": 3,
+        "frequency_sum": 6,
+        "spanning_tree": 6,
+        "combined": 6
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 3,
+        "repetition": 3,
+        "total": 6,
+        "any_collision_edges": 3
+      },
+      "order_sha256": "96f786f0da346f0e710d5303dd2a9016f5a8807a6daa4bef2addaa8f01b37d61"
+    },
+    "exhaustive": {
+      "input_sha256": "7ec5e225bde774c4c10732560ce014bdcf7b43505aaf74cc1e543a19a3007ef9",
+      "report_sha256": "58c1e427e9f1dee6e6ce518af0294838eacae6f39a20e5b814861436fa142d7a",
+      "population": 8,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "EXHAUSTIVE_MINIMUM",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 1,
+        "frequency_sum": 1,
+        "spanning_tree": 0,
+        "combined": 1
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 1,
+        "repetition": 1,
+        "total": 2,
+        "any_collision_edges": 2
+      },
+      "order_sha256": "64ff37876ad0749ae88136f6282ce0f43581a7676dc84770ce9bfbebb04e9236"
+    },
+    "unresolved": {
+      "input_sha256": "7bfa9f9189007e9f7ffcd5182dc0ca36fcd487a4fe2e63dacac4c1e1d3e4a61e",
+      "report_sha256": "5d092aebee73b35cf1d1daa60f35418bc1ece76bbc5ffaed2e3f65a162f8ea0e",
+      "population": 10,
+      "status": "INCOMPLETE",
+      "proof": "UNRESOLVED_BOUNDED_SEARCH",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 1,
+        "frequency_sum": 1,
+        "spanning_tree": 0,
+        "combined": 1
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 2,
+        "total": 2,
+        "any_collision_edges": 2
+      },
+      "order_sha256": "1b93df00d6b526d2d97aec241c0e317bf33c692fdac00ac198a64fbfbddb2b2e"
+    },
+    "T1": {
+      "input_sha256": "046f159cb99d4df7dfec138cf8e717b11cd1d03bed5194db83a83ee2a07fd9b4",
+      "report_sha256": "859b830291d3fff1d9bf4983312774792c44dc60d1d5037819b769a320b60c03",
+      "population": 288,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "ANALYTIC_LOWER_BOUND_MATCHED",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 0,
+        "repetition": 0,
+        "frequency_sum": 0,
+        "spanning_tree": 1,
+        "combined": 1
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 1,
+        "repetition": 0,
+        "total": 1,
+        "any_collision_edges": 1
+      },
+      "order_sha256": "4b73e0a740664aa4ff0c5296f37d58a9f27327a51c94b98cd97cc0ead9ce4c07"
+    },
+    "P1": {
+      "input_sha256": "472a6d869715adf62445c7412b5c7b160e18f73fa41b3072f0d1d43ebe382180",
+      "report_sha256": "c6c80864b392a622c344af57b3cb5f27a1a50bb43a06f4c5840e3feb26b9b3e8",
+      "population": 792,
+      "status": "COMPLETE_CERTIFIED_ORDER",
+      "proof": "ANALYTIC_LOWER_BOUND_MATCHED",
+      "lower_bounds": {
+        "case": 0,
+        "configuration": 791,
+        "repetition": 647,
+        "frequency_sum": 1438,
+        "spanning_tree": 791,
+        "combined": 1438
+      },
+      "collisions": {
+        "case": 0,
+        "configuration": 791,
+        "repetition": 647,
+        "total": 1438,
+        "any_collision_edges": 791
+      },
+      "order_sha256": "90ce186bf80cec00602f5907f6c3a9b37c587156eed06e59323507b0c3670758"
+    }
+  },
+  "media_authorization": "NOT_EVALUATED",
+  "quality_gate": "NOT_EVALUATED"
+}

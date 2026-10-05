@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "hair-eval-v1",
+  "eligibility_version": "hair-asset-eligibility-v1",
+  "decision_id": "decision-001",
+  "run_id": "run-001",
+  "check": "pre_transfer",
+  "evaluated_at_utc": "2026-10-01T00:00:00Z",
+  "freshness_policy_version": "hair-asset-freshness-v1",
+  "clock_source": "trusted_server_clock",
+  "eligible": true,
+  "evaluated_asset_ids": [
+    "ast_00000001",
+    "ast_00000002"
+  ],
+  "manifest_graph_sha256": "6e425a4809d93839412ec662f59a0a56798b70181e39922d9d276bf85c5a0c60",
+  "findings": []
+}

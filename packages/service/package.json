@@ -1,0 +1,25 @@
+{
+  "name": "@hair/service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc -p tsconfig.tests.json --noEmit",
+    "typecheck:tests": "tsc -p tsconfig.tests.json --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "pnpm --workspace-root exec vitest run --config packages/service/vitest.config.ts"
+  },
+  "dependencies": {
+    "@hair/domain": "workspace:*",
+    "@hair/ai": "workspace:*",
+    "sharp": "0.35.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
+

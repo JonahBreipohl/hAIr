@@ -1,0 +1,57 @@
+{
+  "coverage_version": "hair-evaluation-coverage-v1",
+  "scope": "synthetic_fixture_count_evidence",
+  "image_quality_gate": "NOT_EVALUATED",
+  "stages": [
+    {
+      "stage": "H0",
+      "input_sha256": "a695be95055ae68e425703ccd87a665c1a50d15afdc304c3272e14308fd09d8a",
+      "result_sha256": "b9172e6adadae33031adfeeb2651db5808b66ceb8901f461d5f20c29d807ccc7",
+      "subjects": 8,
+      "cases": 32,
+      "slots": 192,
+      "rerun_slots": 0,
+      "findings": []
+    },
+    {
+      "stage": "T0",
+      "input_sha256": "b06ef5c87fc54b4c08b50e6cca1eee494d5fce0c2586530cb35aa01ceb03bc41",
+      "result_sha256": "4ee743bb6fe037d6eddcb62c5f20043f7572066e9e7e995d9a3ec7931e92ac1a",
+      "subjects": 12,
+      "cases": 24,
+      "slots": 48,
+      "rerun_slots": 0,
+      "findings": []
+    },
+    {
+      "stage": "T1",
+      "input_sha256": "cce65f474ce9313707ce60b4f7699afb46b1ee696719740034034d28c9bef49c",
+      "result_sha256": "67801bc3096cf18499423cafc19307e6fdfef8f1c7ca6473f2317673ce582360",
+      "subjects": 36,
+      "cases": 72,
+      "slots": 288,
+      "rerun_slots": 0,
+      "findings": []
+    },
+    {
+      "stage": "R0",
+      "input_sha256": "e23d5d07dfacdde6cc94f994b5873acc83c3373324064d3a3cca35343a275450",
+      "result_sha256": "d962f47c03cb5be91700405f1ef95b67c867ec6c44d107d63c357695ff1529eb",
+      "subjects": 6,
+      "cases": 12,
+      "slots": 24,
+      "rerun_slots": 0,
+      "findings": []
+    },
+    {
+      "stage": "P1",
+      "input_sha256": "9f5d03dd4b405f5977b12f6d5d80c6f92d0b84aa4eb355f6f8567f5d48e94c19",
+      "result_sha256": "b98aa24b2fc0bbd27a1d1336634a51c99fb05f67d57bfbc4c5ee9c789ba75748",
+      "subjects": 120,
+      "cases": 240,
+      "slots": 720,
+      "rerun_slots": 72,
+      "findings": []
+    }
+  ]
+}

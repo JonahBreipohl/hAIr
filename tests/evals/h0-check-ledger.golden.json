@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0.0",
+  "protocol_id": "hair-eval-v1",
+  "ledger_version": "hair-h0-ledger-v2",
+  "harness_version": "hair-h0-ai-v1",
+  "scope": "credential_free_content_free_h0",
+  "ledger_id": "h0-ledger-9a51642e3a049293",
+  "run_id": "h0-ledger-run-001",
+  "created_at_utc": "2026-10-01T08:00:00.000Z",
+  "inputs_sha256": "9a51642e3a04929380a0c6e01795682b600180f82402a19e977f3f841a54faee",
+  "verdict": "H0_PASS",
+  "technical_image_gate_status": "NOT_EVALUATED",
+  "live_evidence_present": false,
+  "excluded_evidence": [
+    "live_provider",
+    "image_quality",
+    "asset_registry_enforcement",
+    "provider_spend"
+  ],
+  "checks": [
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "AI_RUNNER_PREFLIGHT",
+      "scope": "ai_runner",
+      "fixture_id": "h0-ai-fixture-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "report_sha256": "5162a6ead458c4b3cf23d2245f129ffd402b332700d747306e2d4ad48a6b093e",
+        "plan_sha256": "6ec223a792b13d7484ae0f9342d45b050c2d9c5503be6dec129c61cc35e179f9",
+        "case_count": 32,
+        "subject_count": 8,
+        "requested_slots": 32,
+        "completed_slots": 12,
+        "h0_case_count": true,
+        "h0_subject_count": true,
+        "h0_required_scenarios": true,
+        "h0_expected_outcomes": true,
+        "h0_invocation_order": true,
+        "h0_rating_order": true,
+        "h0_manifest_linkage": true
+      },
+      "evidence_sha256": "61dd743c59891597a2364b42359a44b048bf05986f4d5476acccc6225416cb54"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "JOB_CANCELLATION_TRANSITION",
+      "scope": "job_contract",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "running_to_canceled": true,
+        "canceled_to_retry": true
+      },
+      "evidence_sha256": "44994eb25f36a74e8ff637c1acf1d9820f165130dcc0b1e9bf34fafd6d42c516"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_DUPLICATE_CALLBACK",
+      "scope": "service_job",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "replay_equal": true,
+        "terminal_state": "ready",
+        "assets_unchanged": true,
+        "jobs_unchanged": true,
+        "variant_unchanged": true
+      },
+      "evidence_sha256": "d6fbca08015ab8f2260e18f1c24e87bed15f4000e7f11b9ecfab87cbbfcedefe"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_EXPIRY",
+      "scope": "service_retention",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "access_denied": true,
+        "receipt_state": "verified",
+        "remaining_assets": 0
+      },
+      "evidence_sha256": "ca41385736cad7477ed4d700529fc07c8376e6157c9c3c6c1042134beb9989b6"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_IDEMPOTENCY",
+      "scope": "service_job",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "replay_equal": true,
+        "requested_variants": 2
+      },
+      "evidence_sha256": "77a8509496799d5b48d17ec95fd56d1c6d388b10a05be4448a430d3efca31a72"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_LATE_CALLBACK",
+      "scope": "service_job",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "denied": true,
+        "remaining_assets": 0
+      },
+      "evidence_sha256": "7f32d11d50356dc06cded9422eb83a32ac9c1afdb5000b81f1943ed3f6a41c8a"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_PARTIAL_SUCCESS",
+      "scope": "service_job",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "ready_count": 1,
+        "failed_count": 1
+      },
+      "evidence_sha256": "5d61f811417b3d9df6ee2aff7c4b381428fb64ccc4c87a5f158bba604acdbe80"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_RETRY",
+      "scope": "service_job",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "attempt_number": 2,
+        "retry_state": "running"
+      },
+      "evidence_sha256": "c0cb42d8e83ce894ed9c15040a8ab1b18f631e005f38f8bdca5323e6b9432adf"
+    },
+    {
+      "schema_version": "1.0.0",
+      "protocol_id": "hair-eval-v1",
+      "ledger_version": "hair-h0-ledger-v2",
+      "run_id": "h0-ledger-run-001",
+      "check_id": "SERVICE_VERIFIED_DELETION",
+      "scope": "service_retention",
+      "fixture_id": "service-simulator-h0-v1",
+      "executed_at_utc": "2026-10-01T08:00:00.000Z",
+      "status": "PASS",
+      "observations": {
+        "receipt_state": "verified",
+        "verified_components": 9,
+        "remaining_assets": 0
+      },
+      "evidence_sha256": "7880d57edabe0b35c0776241e18c80193d7fc19e397b4a25f73779bf4ecf2e7f"
+    }
+  ],
+  "missing_check_ids": [],
+  "invalid_check_ids": []
+}
