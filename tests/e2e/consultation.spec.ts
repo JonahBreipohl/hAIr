@@ -208,6 +208,18 @@ async function expectNoHorizontalOverflow(page: Page) {
     .toBe(true);
 }
 
+async function expectContentFits(locator: Locator) {
+  await expect(locator).not.toHaveCount(0);
+  await expect
+    .poll(() => locator.evaluateAll((elements) =>
+      elements.filter((element) => element.scrollWidth > element.clientWidth).map((element) => ({
+        tag: element.tagName,
+        overflow: element.scrollWidth - element.clientWidth,
+      })),
+    ))
+    .toEqual([]);
+}
+
 async function tabTo(page: Page, target: Locator, limit = 60) {
   for (let step = 0; step < limit; step += 1) {
     if (await target.evaluate((element) => element === document.activeElement)) return;
@@ -508,31 +520,54 @@ test("opens deletion on the safe action, supports Escape, and restores trigger f
   await expect(deleteTrigger).toBeFocused();
 });
 
-test("reflows at 320 CSS pixels with 200 percent text sizing", async ({ page }) => {
-  await page.setViewportSize({ width: 320, height: 900 });
-  await page.goto("/");
-  await page.locator('[data-app-ready="true"]').waitFor();
-  await page.addStyleTag({ content: ":root { font-size: 200% !important; }" });
-  await expectNoHorizontalOverflow(page);
+for (const font of ["application", "monospace"] as const) {
+  test(`reflows at 320 CSS pixels with 200 percent text sizing (${font} font)`, async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 900 });
+    await page.goto("/");
+    await page.locator('[data-app-ready="true"]').waitFor();
+    await page.addStyleTag({ content: ":root { font-size: 200% !important; }" });
+    if (font === "monospace") {
+      await page.addStyleTag({ content: "body { font-family: monospace; }" });
+    }
+    await expectNoHorizontalOverflow(page);
 
-  await page.getByRole("checkbox", { name: /I am the person pictured/ }).check();
-  await page.getByRole("checkbox", { name: /I understand this is an AI preview/ }).check();
-  await page.getByRole("checkbox", { name: /I will only add reference images/ }).check();
-  await page.getByRole("button", { name: "Continue to photo" }).click();
-  await page.getByRole("button", { name: "Use synthetic demo portrait" }).click();
-  await page.getByRole("button", { name: "Describe the look" }).click();
-  await page.getByLabel("Shape or cut").selectOption("collarbone layers");
-  await expectNoHorizontalOverflow(page);
-  await page.getByRole("button", { name: "Generate three previews" }).click();
-  await expect(
-    page.getByRole("heading", {
-      name: "Choose a direction, then let the stylist assess it.",
-    }),
-  ).toBeVisible({ timeout: 10_000 });
-  await expectNoHorizontalOverflow(page);
-  await page.getByRole("button", { name: "Stylist review" }).click();
-  await expectNoHorizontalOverflow(page);
-});
+    await page.getByRole("checkbox", { name: /I am the person pictured/ }).check();
+    await page.getByRole("checkbox", { name: /I understand this is an AI preview/ }).check();
+    await page.getByRole("checkbox", { name: /I will only add reference images/ }).check();
+    await page.getByRole("button", { name: "Continue to photo" }).click();
+    await expectNoHorizontalOverflow(page);
+    await page.getByRole("button", { name: "Use synthetic demo portrait" }).click();
+    await page.getByRole("button", { name: "Describe the look" }).click();
+    await page.getByLabel("Shape or cut").selectOption("collarbone layers");
+    await expectNoHorizontalOverflow(page);
+    await expectContentFits(page.locator(".look-summary"));
+    await expectContentFits(page.locator(".action-bar .button"));
+    await page.getByLabel("Shape or cut").selectOption("clean high fade with textured top");
+    await expectNoHorizontalOverflow(page);
+    await expectContentFits(page.locator(".look-summary"));
+    await page.getByRole("button", { name: "Generate three previews" }).click();
+    await expect(
+      page.getByRole("heading", {
+        name: "Choose a direction, then let the stylist assess it.",
+      }),
+    ).toBeVisible({ timeout: 10_000 });
+    await expectNoHorizontalOverflow(page);
+    await expectContentFits(page.locator(".action-bar .button"));
+    await page.getByRole("button", { name: "Stylist review" }).click();
+    await expectNoHorizontalOverflow(page);
+    await completePlanApproval(page);
+    await page.getByRole("button", { name: "Create private 24-hour link" }).click();
+    await expect(page.getByText("Private demo link created", { exact: true })).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+    await expectContentFits(page.locator(".completion-actions .button"));
+    await page.getByRole("button", { name: "Delete this consultation" }).click();
+    await expect(page.getByRole("alertdialog")).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+    await page.getByRole("button", { name: "Delete everything" }).click();
+    await expect(page.getByRole("heading", { name: "Consultation deleted" })).toBeVisible();
+    await expectNoHorizontalOverflow(page);
+  });
+}
 
 test("removes material motion when reduced motion is requested", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });

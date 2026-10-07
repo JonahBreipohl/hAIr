@@ -1,5 +1,5 @@
 version: 1
-updated_at: "2026-10-04"
+updated_at: "2026-10-06"
 current_milestone: technical_prototype
 
 status_values:
@@ -10,6 +10,27 @@ status_values:
   - superseded
 
 tasks:
+  - id: CI-001
+    title: Repair font-sensitive consultation reflow and verify main CI
+    status: in_progress
+    priority: P0
+    dependencies:
+      - PROTO-003
+    owned_paths:
+      - apps/web/src/app/globals.css
+      - tests/e2e/consultation.spec.ts
+      - docs/quality/CI-REFLOW-REPAIR.md
+    evidence:
+      - apps/web/src/app/globals.css
+      - tests/e2e/consultation.spec.ts
+      - docs/quality/CI-REFLOW-REPAIR.md
+    acceptance:
+      - 320-pixel and 200-percent-text consultation reflow fits page and brief/button containers across all four profiles with application and wider test fonts
+      - synthetic agreement, sharing, and deletion remain operable with enlarged text
+      - independent review and the full production-server browser suite pass
+      - safety, TypeScript, lint, 501 unit/integration tests, build, and main GitHub Verify pass
+    retry_count: 0
+
   - id: DISC-001
     title: Establish product and delivery foundation
     status: done

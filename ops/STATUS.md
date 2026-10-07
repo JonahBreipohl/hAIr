@@ -1,6 +1,6 @@
 # Project status
 
-**Updated:** 2026-10-04 (UTC checkpoint)
+**Updated:** 2026-10-06
 **Milestone:** 1 — Technical prototype  
 **Overall state:** blocked on external inputs; fake-provider product slice and private service simulator validated, live image-quality and participant evidence outstanding  
 **Next gate:** technical image-quality prototype gate in `docs/QUALITY.md`
@@ -11,6 +11,7 @@ Build and validate a polished, deployable salon consultation product that lets a
 
 ## Verified progress
 
+- Repaired font-sensitive current-brief overflow, enlarged button text, and the deletion-dialog heading after both initial GitHub `Verify` runs failed the 320-pixel / 200% text reflow case across four profiles. Expanded regression coverage includes application and monospace fonts, local panel/button overflow, agreement, sharing, and deletion. All eight targeted development-server checks, all 80 production-server browser checks, 501 unit/integration tests, TypeScript, lint, safety, and a fresh production build pass; independent review reports no material P1/P2 findings. A new GitHub Linux run is the remaining `CI-001` verification step. Evidence: `docs/quality/CI-REFLOW-REPAIR.md`.
 - Published the initial 147-file checkpoint to `https://github.com/JonahBreipohl/hAIr` on `main`, commit `9688253781f69c9d7ac5c6892a0b99036640d4f6`, after the user restored filesystem/network access. Native Git verified the remote SHA and configured `origin/main` tracking. Source, synthetic evaluation evidence and the local-preview guide are included; ignored media, credentials, dependencies, build output and temporary reports are excluded. This publishes the code repository, not a hosted application. The earlier publication-permission blocker is resolved.
 - Completed the product, architecture, roadmap, quality, decision, consent, data-map, threat-model, deletion, and evaluation contracts for a professional adult-only consultation PWA.
 - Built the responsive Next.js PWA walking skeleton from consent through structured hair input, deterministic three-result generation, partial recovery, comparison, refinement, stylist feasibility, agreed plan, private-link simulation, expiry, and local deletion. Plan edits or agreement withdrawal revoke the local share state. Verified backend deletion is exercised separately in the service simulator.
@@ -66,7 +67,7 @@ Build and validate a polished, deployable salon consultation product that lets a
 - The 2026-10-04 09:35 UTC audit found no new input to the pending benchmark-access, portrait-permission and budget question. All 19 completed tasks have recorded evidence; the three remaining tasks are blocked and none is dependency-ready. Fresh task-graph and repository-safety checks passed. The prior full verification remains the 501-test checkpoint above; it was not rerun during this audit. Delegated results are integrated and no auxiliary hAIr chat needs restarting or archiving. The goal's usage-limited state remains unchanged.
 - The live image-quality bake-off requires provider credentials or organization access, approved adult benchmark portraits, and an explicit spend limit. Restricted registry enforcement and the remaining harness gates must also pass before a live call. This blocks the technical image gate and all production-data or pilot release work.
 - Moderated usability evidence requires representative participants and external coordination; the software and scripts are ready, but the project is not authorized to contact salons or participants autonomously.
-- A fresh dependency install is unverified: the supplied pnpm launcher cannot resolve project version 10.33.2 from its offline package mirror. Sharp 0.35.4 was already installed, runs successfully, and is now declared directly with matching existing lockfile entries. Current checks use installed dependencies; clean-install and other native-platform evidence remain pending.
+- The earlier pnpm launcher blocker no longer reproduces: pnpm 10.33.2 and `pnpm install --frozen-lockfile` now succeed in the installed workspace. Both initial GitHub Linux runs also installed from the frozen lockfile successfully. A fresh local installation and other native-platform evidence remain unverified.
 
 ## Risks under active management
 
