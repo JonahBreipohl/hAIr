@@ -48,7 +48,12 @@ its container. The heading wrapping repair addresses that defect.
   320 x 568 pixels / 200% text / monospace completed the synthetic flow through
   sharing and deletion, verified reachable actions, and retained document width
   320 with no local completion-button overflow.
-- New GitHub Linux `Verify` run: pending publication and verification.
+- [GitHub Linux Verify run 37580739134](https://github.com/JonahBreipohl/hAIr/actions/runs/37580739134):
+  passed on repair commit `af83582ae464b4dc63842a498838721f485145ca`.
+  Frozen-lockfile installation, safety, TypeScript, lint, all 501 unit/integration
+  tests, production build, and all 80 development-server browser checks passed.
+  No flaky or retried-test summary was reported. The earlier failures remain
+  historical evidence and are superseded by this passing repair run.
 
 Physical devices, assistive technology, live image quality, participant research,
 and pilot-release evidence remain separate outstanding gates.

@@ -12,7 +12,7 @@ status_values:
 tasks:
   - id: CI-001
     title: Repair font-sensitive consultation reflow and verify main CI
-    status: in_progress
+    status: done
     priority: P0
     dependencies:
       - PROTO-003
